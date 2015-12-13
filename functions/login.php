@@ -41,8 +41,8 @@ while($row = mysqli_fetch_assoc($query)){
 		header("location: ./main/main.php");
 		}else header("location: ./main/main.php");
 				
-}else $applyI ="Email or Password does not exist!!";
-}else $applyI="Input password";
+}else $applyI ="Email or Password does not exist!!<br/>OR <a href='#' style='color:black; background-color:white;'> Forgot Password</a>";
+}else $applyI=" Input password";
 }else $applyI="Input email";
 }
 

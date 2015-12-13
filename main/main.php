@@ -12,7 +12,7 @@
 </div>
 
 <div id ="search_top">
-<input id="search" type="search"  placeholder="Search through here, <?php echo $first." ". $last;?>"/>
+<input id="search" type="search"  placeholder="Search through here, <?php echo $first." ". $last."...";?>"/>
 <input id="done_search" type="button" value="search"/>
 </div>
 

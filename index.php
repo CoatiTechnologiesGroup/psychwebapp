@@ -16,8 +16,9 @@
 <input name ="ilogin" id="ilogin"type="submit" value="Login" tabindex="0">
 
 <input name ="ipassword" id="ipassword" type="password" placeholder="password" required tabindex="3">
-<input  name ="iemail" id="iemail" type="text"  placeholder="email"  required value="<?php echo $_POST['iemail'];?>"  tabindex="1">
-<span  style="float:right; margin-right:3px; font-size:27px"><?php echo $applyI; ?></span>
+<input  name ="iemail" id="iemail" type="email"  placeholder="email"  required value="<?php echo $_POST['iemail'];?>"  tabindex="1">
+<span  style="float:right; margin-right:3px; font-size:12px"><?php echo $applyI; ?></span>
+<span  style=" margin-top:2px; font-size:17px"></span>
 </form>
 </div>
 <p></p>

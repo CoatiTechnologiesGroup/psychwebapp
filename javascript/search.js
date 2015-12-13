@@ -13,6 +13,8 @@ $('#SympDisorder').click(function(){
 	});
 
 $('#stage_of_change').click(function(){
-	var v = $('#stage_of_change').text();
+	var  v = $('#stage_of_change').text();
 	$('#search').val(v);
 	});
+	
+	
