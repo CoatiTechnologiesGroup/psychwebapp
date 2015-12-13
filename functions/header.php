@@ -1,4 +1,5 @@
 <?php 
+error_reporting(E_ALL^E_NOTICE);
 session_start();
 
 
@@ -6,6 +7,10 @@ $emailss = $_SESSION['email'];
 $last	= $_SESSION['lastname'];
 $first = $_SESSION['firstname'];
 
+//if email exist direct
+if($emailss){
+		//header("location: ./main/main.php");
+		}else 	header("location: ../index.php");
 ?>
 
 <!doctype html>
@@ -17,6 +22,11 @@ $first = $_SESSION['firstname'];
 <link type="text/css" href="../css/main.css" rel="stylesheet"/>
 </head>
 <body>
-<div id="div">sdfsdf || home || profile|| <a  href="../functions/logout.php" >logout</a></div>
+<div id="top">
+<span id="logout"><a  href="../functions/logout.php" >logout</a></span>
 
-<?php echo "welcome $first $last "; ?>
+<span id= "welcome"><?php echo "welcome $first $last "; ?></span>
+
+</div>
+
+

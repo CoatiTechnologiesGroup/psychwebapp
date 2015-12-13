@@ -1,8 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 
-#s{ background-color:#121111;
-color:white;}
+#s{
+	background-color: #000000;
+	color: white;
+	background-image: url(../pictures/images.jpg);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
 
 
 /* login*/
@@ -28,7 +33,7 @@ width:1000px;}
 
 input{
 	border-radius: 4px;
-	border: 2px solid #B5AAAA;
+	border: 2px solid #3B3131;
 	height: 30px;
 }
 

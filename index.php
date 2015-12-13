@@ -7,7 +7,7 @@
 <title>Untitled Document</title>
 <link type="text/css" href="./css/login.css" rel="stylesheet"/>
 </head>
-<body id="s">
+<body id="s" >
 <div id="top"></div>
 
 
