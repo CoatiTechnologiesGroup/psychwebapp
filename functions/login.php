@@ -1,5 +1,5 @@
 <?php 
-error_reporting(E_ALL ^ E_NOTICE);
+include"error.php";
 require("connection.php");
 session_start();
 
@@ -17,7 +17,8 @@ $login = $_POST['ilogin'];
 if($login){
 	if($iemail){
 		if($ipassword){
-			$query = mysqli_query($con,"SELECT * FROM client WHERE email = '$iemail' AND password ='$ipassword'");
+			$hipass = md5($ipassword);
+			$query = mysqli_query($con,"SELECT * FROM client WHERE email = '$iemail' AND password ='$hipass'");
 $numrows = mysqli_num_rows($query);
 
 if($numrows ==1){
@@ -41,7 +42,7 @@ while($row = mysqli_fetch_assoc($query)){
 		header("location: ./main/main.php");
 		}else header("location: ./main/main.php");
 				
-}else $applyI ="Email or Password does not exist!!<br/>OR <a href='#' style='color:black; background-color:white;'> Forgot Password</a>";
+}else $applyI ="Email or Password does not exist!!<br/> <a href='#' style='color:black; background-color:white;'> Forgot Password</a>";
 }else $applyI=" Input password";
 }else $applyI="Input email";
 }

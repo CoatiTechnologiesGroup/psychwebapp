@@ -1,5 +1,5 @@
 <?php 
-error_reporting(E_ALL^E_NOTICE);
+include"error.php";
 include"connection.php";
 
 session_start();
@@ -49,12 +49,14 @@ if($done){
 					if($password){
 						if(strlen($password)>=4){
 							if($password===$cpassword){
+								
+								$hpass = md5($password);
 
 //inserting data to database
 $query = mysqli_query($con,"SELECT * FROM client WHERE email = '$email'");
 $numrows = mysqli_num_rows($query);
 if($numrows==0){
-$query = mysqli_query($con,"INSERT INTO client VALUES('','$first', '$last','$email','$password','$datee')");
+$query = mysqli_query($con,"INSERT INTO client VALUES('','$first', '$last','$email','$hpass','$datee')");
 
 $applyR="data insected";
 
@@ -105,4 +107,5 @@ if($numrows ==1){
 		}else $applyR  ="input email";
 		}else $applyR= "input lastname";
 		}else $applyR = "input firstname";
-		}else $applyR = "Register";
+		}else $applyR = "Register ";
+		

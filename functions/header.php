@@ -1,6 +1,8 @@
 <?php 
-error_reporting(E_ALL^E_NOTICE);
+include"error.php";
 session_start();
+
+
 
 
 $emailss = $_SESSION['email'];
@@ -19,6 +21,7 @@ if($emailss){
 <head>
 <meta charset="utf-8">
 <title>Untitled Document</title>
+<?php $i = 1;?>
 <link type="text/css" href="../css/main.css" rel="stylesheet"/>
 </head>
 <body>

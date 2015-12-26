@@ -1,6 +1,6 @@
 <?php
 
-error_reporting(E_ALL^E_NOTICE);
+include"error.php";
 //make you changes in this directory...
 include("editconnect.php");
 
@@ -9,4 +9,6 @@ $con = mysqli_connect(host, user, pass,dbname);
 //$cons = new mysqli_connect(host, user, pass,dbname); 
 
 //mysql_select_db(dbname);
+
+
 ?>

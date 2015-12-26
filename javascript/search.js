@@ -17,4 +17,16 @@ $('#stage_of_change').click(function(){
 	$('#search').val(v);
 	});
 	
+//logout keytype----------
+
+$(document).keyup(function(ee){
+	    if(ee){keycode = ee.keyCode}else keycode =event.keyCode; //or below
+	 // ee? keycode = ee.keyCode : keycode =event.keyCode;
+	  //console.log(keycode);
+	   if(keycode == 27){
+		window.location="../functions/logout.php";	  
+		}
+		});
+		
+	
 	
