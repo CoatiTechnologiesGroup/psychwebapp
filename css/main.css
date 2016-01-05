@@ -26,9 +26,9 @@ font-size:26px;}
 	width: 1000px;
 	top: 50px;
 	position: relative;
-	border-top: thin solid black;
+	border-top: thin solid #99CBAD;
 	margin: auto;
-	height: 600px;
+	height: 50px;
 	border-collapse: collapse;
 
 	}
@@ -66,10 +66,10 @@ font-size:26px;}
 	border-radius:4px;}
 	
 #left_dropdown {
-	top:5px;
+	top:0px;
 	position:absolute;
 	font-size: 24px;
-	border-right: thin solid black ;
+	border-right: thin solid #99CBAD ;
 	width:320px;
 
 	
@@ -84,18 +84,18 @@ font-size:26px;}
 	width:300px;
 	border:thin solid green;
 	
-	margin:0 5px 5px 5px;
+	margin:5px
 	
 	
 }
 #left_dropdown div:hover{
 	position:relative;
 	
-	font-size: 26px;
+	font-size: 24px;
 	
 	color: white;
 	width:300px;
-	border:thin  green;
+	border:thin solid green;
 	margin:5px;
 	cursor:pointer;
 	background-color:#39C12E;}
@@ -105,8 +105,8 @@ font-size:26px;}
 	top:130px;
 	margin:auto;
 	width:100%;
-	border:thin solid green;
-	height:500px;}
+	dborder:thin solid green;
+	fheight:500px;}
 	
 	
 /*---------------- admin-------------*/
@@ -117,7 +117,7 @@ font-size:26px;}
 	margin:auto;
 	width:1050px;
 	
-	border-top:thin solid black;
+	border-top:thin solid #99CBAD;
 	height:600px;
 	}
 
@@ -126,7 +126,7 @@ position:relative;
 float:left;
 
 
-border-right:thin solid black;
+border-right:thin solid #99CBAD;
 width:300px;
 }
 
@@ -255,10 +255,17 @@ margin:1px;
 	background-color:#F3EEEE;
 
 	}
-#aa:hover{
+#aa:hover{ 
 	
 	font-size:20px;
 	color:white;
 	background-color:green;
+	
+	}
+#group td{
+	
+	
+	width:300px;
+	
 	
 	}
