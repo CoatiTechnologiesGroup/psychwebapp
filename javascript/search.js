@@ -4,17 +4,17 @@
 
 $('#age').click(function(){
 	var v = $('#age').text();
-	$('#search').val(v);
+	
 	});
 
 $('#SympDisorder').click(function(){
 	var v = $('#SympDisorder').text();
-	$('#search').val(v);
+	
 	});
 
 $('#stage_of_change').click(function(){
 	var  v = $('#stage_of_change').text();
-	$('#search').val(v);
+	
 	});
 	
 //logout keytype----------
@@ -47,5 +47,24 @@ top.style.top = "";
 	}
 }
 	window.addEventListener("scroll",Scroll);
+	
+///-------------
+	
+function _(id){
+	return document.getElementById(id);
+	}
+	
+	function searchh(){
+		var sv = $('#search').val();
+		
+	$.get("../functions/searchh.php", {sv:sv},function(data){
+	
+
+$('#search_result').html(data) 	;
+	});
+	 
+
+
+}
 	
 	

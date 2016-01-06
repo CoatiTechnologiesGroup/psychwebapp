@@ -13,7 +13,12 @@
 
 <div id ="search_top">
 <input id="search" type="search"  placeholder="Search through here, <?php echo $first." ". $last."...";?>"/>
-<input id="done_search" type="button" value="search"/>
+<input id="done_search" type="button" onclick="searchh();" value="search"/>
+
+<div id='ser'>
+
+</div>
+
 </div>
 
 <!-- search result area-->
@@ -22,9 +27,6 @@
 
 </div>
 
-<div id="search_result">
-<?php include"../functions/group.php";?>
-
-</div>
+<center><div id="search_result"></div></center>
 
 <?Php include "../functions/footer.php";?>
