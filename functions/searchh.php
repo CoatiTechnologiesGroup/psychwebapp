@@ -74,7 +74,7 @@ while($row=mysqli_fetch_array($query)){
 	echo "<table border='1' id='groupf'><tr ><td><div style='width:80px; overflow-x: hidden;'>$age</div></td><td><div style='width:140px; overflow-x: hidden;'>$Stage_of_Change</div></td><td><div style='width:140px; overflow-x: hidden;'>$Symptoms_and_Disorders</div></td><td><div style='width:200px; overflow-x: hidden;'>$Psychological_Treatment</div></td><td> <div style='width:120px; overflow-x: hidden;'>$Evidence_Level</div></td><td><div style='width:500px; height:80px; overflow-x: hidden;' contenteditable='false' >$Basis_for_Evidence </div></td></tr></table>";
 }
 			 
-			 }else echo "<span style='font-size:30px;'>No result found for <span style='color:orange;'>$k</span> on <span style='color:green;'>$sel</span></span>";
+			 }else echo "<span style='font-size:30px;'>No result found for <span style='color:orange;'>$k</span> on <span style='color:green;'>$select</span></span>";
 			 }//else echo "Type whatever you are serching for in the search field";
 
 

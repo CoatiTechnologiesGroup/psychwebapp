@@ -70,15 +70,19 @@ top.style.top = "";
 ///-------------
 	
 
-	
+$('#successsh').hide();
+
 function searchh(){
+	$('#successsh').show();
 var sv = $('#search').val();
 var sel = $('#sel').val();
-//alert(sel);
+
 $.get("../functions/searchh.php", {sv:sv,sel:sel},function(data){
 	
 	
 $('#search_result').html(data) 	;
+
+$('#successsh').hide();
 });
 }
 

@@ -33,7 +33,16 @@
 
 </div>
 
-<center><div id="search_result"></div></center>
+<center>
+
+
+<div id="search_result">
+
+</div><p></p>
+<p></p>
+<p></p><p></p>
+<span  id="successsh"><img   width="425px"  height="425px" src="../pictures/loading.gif"></span>
+</center>
 
 <script type="text/javascript">
 
