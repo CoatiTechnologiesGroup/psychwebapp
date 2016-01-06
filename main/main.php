@@ -6,7 +6,7 @@
 
 
 <div id="left_dropdown">
-<select>
+<select id="sel">
 <option>Age</option>
 <option>Stage of Change</option>
 <option>Symptoms & Disorders</option>
@@ -18,7 +18,7 @@
 </div>
 
 <div id ="search_top">
-<input id="search" type="search"  placeholder="Search through here, <?php echo $first." ". $last."...";?>"/>
+<input id="search" type="search"  onKeyUp="searchh();"  placeholder="Search through here, <?php echo $first." ". $last."...";?>"/>
 <input id="done_search" type="button" onclick="searchh();" value="search"/>
 
 <div id='ser'>

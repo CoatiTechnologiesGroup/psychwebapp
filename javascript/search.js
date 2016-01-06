@@ -1,6 +1,8 @@
 // JavaScript Document
 
-
+function _(id){
+	return document.getElementById(id);
+	}
 
 $('#age').click(function(){
 	var v = $('#age').text();
@@ -19,6 +21,15 @@ $('#stage_of_change').click(function(){
 	
 //logout keytype----------
 
+$(document).keyup(function(ee){
+	    if(ee){keycode = ee.keyCode}else keycode =event.keyCode; //or below
+	 // ee? keycode = ee.keyCode : keycode =event.keyCode;
+	  //console.log(keycode);
+	   if(keycode == 27){
+		window.location="../functions/logout.php";	  
+		}
+		});
+		
 $(document).keyup(function(ee){
 	    if(ee){keycode = ee.keyCode}else keycode =event.keyCode; //or below
 	 // ee? keycode = ee.keyCode : keycode =event.keyCode;
@@ -58,22 +69,20 @@ top.style.top = "";
 	
 ///-------------
 	
-function _(id){
-	return document.getElementById(id);
-	}
-	
-	function searchh(){
-		var sv = $('#search').val();
-		
-	$.get("../functions/searchh.php", {sv:sv},function(data){
-	
 
+	
+function searchh(){
+var sv = $('#search').val();
+var sel = $('#sel').val();
+//alert(sel);
+$.get("../functions/searchh.php", {sv:sv,sel:sel},function(data){
+	
+	
 $('#search_result').html(data) 	;
-	});
-	 
-
-
+});
 }
+
+
 	
 
 	
