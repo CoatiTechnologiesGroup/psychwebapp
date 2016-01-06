@@ -39,6 +39,7 @@ if(ypos > 100) {
 	top.style.top = "0";
 	top.style.position ="fixed";
 	top.style.zIndex="5";
+	top.style.backgroundColor="white";
 
 }
 else{

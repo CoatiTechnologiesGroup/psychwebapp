@@ -34,7 +34,8 @@ $query = "select * from groupp where ";
 			 
 	if(($k != "")){
 			 if(($numrows > 0)) { 
-echo "<table border='1' id='groudp'   ><tr ><td ><center><div style='width:200px; overflow-x: hidden;'>stage of change</div></center></td><td><center><div style='width:200px; overflow-x: hidden;'>Symptoms and Disorders</div></center></td><td><center><div style='width:200px; overflow-x: hidden;'>Psychological Treatment</div></center></td><td><center><div style='width:200px; overflow-x: hidden;'>Evidence Level</div></center></td><td><center><div style='width:495px; overflow-x: hidden;'>Basis for Evidence</div></center></td></tr></table>";
+			 
+echo "<table border='1' id='groudp'  style='background-color:grey;'  ><tr ><td ><center><div style='width:200px; overflow-x: hidden;'>stage of change</div></center></td><td><center><div style='width:200px; overflow-x: hidden;'>Symptoms and Disorders</div></center></td><td><center><div style='width:200px; overflow-x: hidden;'>Psychological Treatment</div></center></td><td><center><div style='width:200px; overflow-x: hidden;'>Evidence Level</div></center></td><td><center><div style='width:495px; overflow-x: hidden;'>Basis for Evidence</div></center></td></tr></table>";
 			
 while($row=mysqli_fetch_array($query)){
 	
@@ -55,3 +56,23 @@ while($row=mysqli_fetch_array($query)){
 
 
 ?>
+
+<script type="text/javascript">
+
+
+function replaceString(sourceString, patternToFind, strReplacement) {
+	var result = sourceString.replace(patternToFind,strReplacement);
+	document.getElementById('search_result').innerHTML = result;
+}
+var ii = document.getElementById('search').value;
+var reg = /<?php echo $k; ?>/gi
+
+
+
+function doReplacement() {
+replaceString(document.getElementById('search_result').innerHTML,reg,"<span style='color:red;' >"+" <em >' <span style=''><?php echo $k; ?></span> '</em> "+"</span>");
+
+}
+
+doReplacement();
+</script>
