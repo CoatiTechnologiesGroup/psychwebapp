@@ -44,9 +44,14 @@ $(document).keyup(function(ee){
 function Scroll(){
 var top = document.getElementById('search_top');
 var lefttop = document.getElementById('left_dropdown');
+var groupp = document.getElementById('groupp');
+
+
 var ypos = window.pageYOffset;
 if(ypos > 100) {
 	//top.style.opacity = "0";
+	
+	$('#groupp').show();
 	
 	top.style.top = "0";
 	top.style.position ="fixed";
@@ -57,15 +62,25 @@ if(ypos > 100) {
 	lefttop.style.zIndex="5";
 	lefttop.style.backgroundColor="white";
 
+	
+	
+
+	
+	
+
 }
 else{
+	$('#groupp').hide();
 top.style.top = "";
 	top.style.position ="";
 	lefttop.style.top = "";
 	lefttop.style.position ="";
+	
+	
+	
 	}
 }
-	window.addEventListener("scroll",Scroll);
+window.addEventListener("scroll",Scroll);
 	
 ///-------------
 	
@@ -73,7 +88,7 @@ top.style.top = "";
 $('#successsh').hide();
 
 function searchh(){
-	$('#successsh').show();
+$('#successsh').show();
 var sv = $('#search').val();
 var sel = $('#sel').val();
 
