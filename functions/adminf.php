@@ -28,15 +28,30 @@ function pagination($con){
 $num =mysqli_num_rows($queryt);
 $div = ($num/25);
 $p= ceil($div);
-echo "preview";
+echo "";
 
 
 for($b =1; $b<=$p; $b++){
 	
 	
-	echo "<span id='$b' href='#' onClick='pag($b);'  style=' border-radius:4px; margin:5px; background-color:grey; color:white; padding:0 5px 0  5px; cursor:pointer;'>$b</span>";
+	
+	echo "<button id='$b' href='#' onClick='pag($b);'  style=' border-radius:4px; margin:5px; background-color:grey; color:white; padding:0 5px 0  5px; cursor:pointer;'>$b</button>";
+	if($b>=5){
+		echo"<script type='text/javascript'>
+	document.getElementById('left_p').style.display = 'none';
+	
+	</script>";
+	}else{
+		echo"<script type='text/javascript'>
+	document.getElementById('left_p').style.display = 'block';
+	
+	</script>";
+		}
+		
+	
 	}
-	echo "next";
+	
+	
 	}
 
 

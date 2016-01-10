@@ -14,6 +14,7 @@ function adde(){
 			
 				//alert(data);
 				$("#s").html(data);
+				$("#s").show();
 			//clear
 			$('#age').val("");
 		 $('#stage').val("");
@@ -29,9 +30,15 @@ function adde(){
 		  $('#evidences').hide();
 		 $('#basiss').hide();
 		 
-		 $("#adminsrp").hide()
-		  $("#adminsr").show()
-		$("#adminsr").html( $("#adminsr").load("../functions/group.php"));
+		 $("#ii").html("You are on page "+"<span style='color:red;'>"+1+"</span>");
+		 $("#adminsrp").show();
+		  $("#adminsr").show();
+		  
+		  $('#hidden').text(1);
+		  $("#adminsr").html( $("#adminsr").load("../functions/group.php"));
+		  
+		  
+		
 			
 				});
 }
@@ -103,27 +110,78 @@ function pag(v){
 	
 	$("#adminsr").hide();
 	$("#adminsrp").show();
+	$("#ii").show();
+	$("#s").hide();
 	
 	
 	$.get('../functions/pagination.php', {v:v},function(data){
 	$("#adminsrp").html( data);
 
-$("#ii").html('You are on page '+ v+" ");
+
+$("#ii").html("You are on page <span style='color:red;'> "+ v+"</span> ");
+
+$("#hidden").html( v);
+
 
 			});
 	
 }
 
-function t(v){
-	var vb = document.getElementById(v);
-	var vbb = $('#'+v).text();
-	var bb = $("#ii").html('You are on page '+ v+" ");
-	var bn = "You are on page "+ vbb+" ";
+function tnext(v){
+if(v==v){
+	v=parseInt(v)+1;
 	
-		if(bb==bn){
-			vb.style.color='red';
-			}else{
-				vb.style.color='green';
-					}
+	$("#adminsr").hide();
+	$("#adminsrp").show();
+	$("#ii").show();
+	$("#s").hide();
 	
+	
+	$.get('../functions/pagination.php', {v:v},function(data){
+	$("#adminsrp").html( data);
+
+$("#ii").html("You are on page <span style='color:red;'> "+ v+"</span> ");
+
+$("#hidden").html( v);
+
+
+			});
+	
+	}
 }
+
+$("#nextt").click(function (){
+tnext($("#hidden").text());
+	});
+	
+function tprev(v){
+if(v==v){
+	v=parseInt(v)-1;
+	
+	if(v!=0){
+	$("#adminsr").hide();
+	$("#adminsrp").show();
+	$("#ii").show();
+	$("#s").hide();
+	
+	
+	$.get('../functions/pagination.php', {v:v},function(data){
+	$("#adminsrp").html( data);
+
+
+$("#ii").html("You are on page <span style='color:red;'> "+ v+"</span> ");
+
+$("#hidden").html( v);
+
+
+			});
+	
+	}
+}
+}
+
+$("#prev").click(function (){
+tprev($("#hidden").text());
+	});
+	
+$("#left_ps").hide();
