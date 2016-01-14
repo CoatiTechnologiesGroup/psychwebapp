@@ -1,5 +1,9 @@
-// JavaScript Document
+
+
 $("#adminsr").load("../functions/group.php");
+
+
+//insert data to database
 function adde(){
 		var age = $('#age').val();
 		var stage = $('#stage').val();
@@ -16,11 +20,12 @@ function adde(){
 				$("#s").html(data);
 				$("#s").show();
 			//clear
-			$('#age').val("");
+			/*$('#age').val("");
 		 $('#stage').val("");
 		$('#symptoms').val("");
 		 $('#psychological').val("");
 		  $('#evidence').val("");
+		  */
 		 $('#basis').val("");
 		 		//hide
 		$('#ages').hide();
@@ -43,7 +48,7 @@ function adde(){
 				});
 }
 
-
+//small serach 
 function searche(id,value){
 	var val = $(value).val();
 	$.get('../functions/admines.php', {val:val,id:id},function(data){
@@ -53,14 +58,14 @@ $(value+"s").show();
 	
 			});
 	}
-	
+	//small search replace
 function results(val1,val2){
 	var val12 = $(val1).text();
 	var val22 = $(val2).val(val12);
 	$(val1).hide();
 	
 	}
-	
+	// scrolling
 	function Scroll(){
 var top = document.getElementById('search_top');
 var lefttop = document.getElementById('left_dropdown');
@@ -101,32 +106,20 @@ window.addEventListener("scroll",Scroll);
 ///pagination 
 
 function pag(v){
-	
-	
-	
-	
-	
-	
-	
 	$("#adminsr").hide();
 	$("#adminsrp").show();
 	$("#ii").show();
 	$("#s").hide();
-	
-	
 	$.get('../functions/pagination.php', {v:v},function(data){
 	$("#adminsrp").html( data);
-
-
-$("#ii").html("You are on page <span style='color:red;'> "+ v+"</span> ");
-
-$("#hidden").html( v);
+	$("#ii").html("You are on page <span style='color:red;'> "+ v+"</span> ");
+	$("#hidden").html( v);
 
 
 			});
 	
 }
-
+//next
 function tnext(v){
 if(v==v){
 	v=parseInt(v)+1;
@@ -149,11 +142,12 @@ $("#hidden").html( v);
 	
 	}
 }
-
+//next click
 $("#nextt").click(function (){
 tnext($("#hidden").text());
 	});
 	
+	//preview
 function tprev(v){
 if(v==v){
 	v=parseInt(v)-1;
@@ -180,8 +174,57 @@ $("#hidden").html( v);
 }
 }
 
+
+    /* String url ="http://stecks.bugs3.com";
+        WebView vw = (WebView) this.findViewById(R.id.webView);
+        vw.getSettings().setJavaScriptEnabled(true);
+        vw.loadUrl(url);
+*/
+
+//prev click
 $("#prev").click(function (){
 tprev($("#hidden").text());
 	});
+
+function dele(d){
+		var v = $('#hidden').text();
+		
+		$.post('../functions/deleteadmine.php', {deletee:d},function(data){
+			
+	$("#adminsr").hide();
+	$("#adminsrp").show();
+	$("#ii").show();
+	$("#s").hide();
+	
+	$.get('../functions/pagination.php', {v:v},function(data){
+	$("#adminsrp").html( data);
+	$("#ii").html("You are on page <span style='color:red;'> "+ v+"</span> ");
+	$("#hidden").html( v);
+
+
+			});
+			
+				});
+		
+}
+	
+
+$('#xs').hide();
+$('#x').click(function (){
+	$('#x').hide();
+	$('#xs').show();
+	$('#page2').hide();
+	$('#nextt').show();
+	});
+
+$('#xs').click(function (){
+	$('#xs').hide();
+	$('#x').show();
+	$('#page2').show();
+	$('#nextt').hide();
+	});
+
 	
 $("#left_ps").hide();
+
+

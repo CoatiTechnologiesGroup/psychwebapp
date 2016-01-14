@@ -43,13 +43,12 @@
 	float:left;
 	width:280px;
 	margin:3px;
-	resize:vertical;
 	
-	}
+	resize:none;}
 #groupp{
 	position:fixed;
 	bottom:26px;
-	left:65px;
+	left:57px;
 	
 	border:thin solid #191919;
 	background-color:white;
@@ -58,22 +57,6 @@
 	
 	
 	}
-
-#groupd{
-	
-	
-	border-right:thin solid #191919;
-	border-left:thin solid #191919;
-	background-color:white;
-	color:green;
-	border-radiusa:5px;
-	padding:0 5px 0 5px;
-	
-	
-	}
-	
-	
-
 #page{
 	
 	position:fixed;
@@ -82,15 +65,14 @@
 	
 	
 	border:thin solid #A38F8F;
-	background-color:white;
+	background-color:#1E5B1E;
 	width:100%;
 	height:25px;
 	}
-
 #page2{
 	
 	position:fixed;
-	bottom:77px;
+	bottom:82px;
 	left:0px;
 	
 	
@@ -100,11 +82,10 @@
 	width:300px;
 	overflow-x:hidden;
 	}
-	
 #x{
 	
 	position:fixed;
-	top:221px;
+	bottom:63px;
 	left:0px;
 	
 	
@@ -118,14 +99,43 @@
 #xs{
 	
 	position:fixed;
-	bottom:56px;
+	bottom:63px;
 	left:0px;
 	
 	
 	border:thin solid #A38F8F;
 	background-color:white;
 	
-	width:50px;
+	width:80px;
 	cursor:pointer;
 	z-index:50;
+	}
+#groupf tr td{
+	border:thin solid green;
+	border-radius:3px;
+	margin:px;
+	
+	
+	}
+	#groupd tr td{
+	border: 1px solid green;
+	border-radius: 3px;
+	margin: px;
+	color:white;
+	background-color: #1E5B1E;
+	}
+#groupp tr td{
+	border: 1px solid green;
+	border-radius: 3px;
+	margin: px;
+	color:white;
+	background-color: #1E5B1E;
+	}
+ #xx{
+	
+
+	color:red;
+	background-color: white;
+	cursor:pointer;
+	
 	}
