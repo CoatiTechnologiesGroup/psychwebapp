@@ -20,7 +20,30 @@ if($Evidence){
 	if($Basis){
 		
 		
-		$query = mysqli_query($con,"insert into groupp values('id','$age','$stage','$Symptoms','$Psychological','$Evidence','$Basis')");
+//ranking order
+
+switch ($Evidence) {
+    case "Good":
+        $rank = 4 ;
+        break;
+    case "Fair":
+        $rank = 3 ;
+        break;
+    case "Excellent":
+        $rank = 5 ;
+        break;
+	case "Unclear":
+        $rank = 1;
+        break;
+	case "Experimental":
+        $rank = 2;
+        break;
+   default:
+   $rank = "will be ranked ";
+      
+}
+		
+		$query = mysqli_query($con,"insert into groupp values('id','$age','$stage','$Symptoms','$Psychological','$Evidence','$Basis','$rank')");
 		
 		
 	 dropbox($con,$age,$stage,$Symptoms,$Psychological,$Evidence,$Basis);

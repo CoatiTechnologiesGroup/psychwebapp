@@ -90,6 +90,10 @@ top.style.top = "";
 }
 window.addEventListener("scroll",Scroll);
 	
+//---
+
+
+
 ///-------------
 	
 
@@ -98,6 +102,8 @@ $('#successsh').hide();
 // search function ----
 
 function searchh(){
+	
+
 $('#successsh').show();
 
 var sel = $('#sel').val();
