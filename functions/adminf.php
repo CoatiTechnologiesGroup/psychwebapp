@@ -16,7 +16,7 @@ while($row=mysqli_fetch_array($query)){
 	$lenE = ucfirst(substr($email, 0, 13));
 	$lenD = ucfirst(substr($date, 0,13));
 	
-echo "<table id='cliental' > <tr><td><a href='#'>$id</a></td> <td>$first</td><td>$last</td><td title='$email'>$lenE</td><td title='$date'>$lenD <span  style='color:red; font-size:20px; cursor:pointer;' title='delete'>X</span></td> </tr></table>";
+echo "<table id='cliental' > <tr><td><a href='#'>$id</a></td> <td>$first</td><td>$last</td><td title='$email'>$lenE</td><td title='$date'>$lenD </td> </tr></table>";
 	
 	}
 	
@@ -34,6 +34,9 @@ $pp= ceil($div)-1;
 
 //javascript for next/preview
 echo"<script type='text/javascript'>
+
+
+
 	function tn(){
 	var o =$('#hidden').text();
 	
@@ -54,17 +57,32 @@ function tp(){
 	
 	}
 
+
+$('#'+$b).click(function(){
+	
+	alert($b);
+	
+	});
 </script>";
 
 //pagination	
-for($b =1; $b<=$p; $b++){
+
+$b =1;
+
+echo "<script  type='text/javascript'>
+
+</script>";
+for($b; $b<=$p; $b++){
 	
 
 	
-	echo "<button id='$b' href='$cc'  onClick='pag($b);'  style=' border-radius:4px; margin:5px; background-color:white; color:#1E5B1E; padding:0 5px 0  5px; cursor:pointer;'>$b</button>";
+	echo "<button id='$b' href='$cc'  onClick='pag($b);'  style=''>$b</button>";
 	
  $pd = $p+1;
 	echo"<script type='text/javascript'>
+	
+	
+	
 	
 	$('#'+$b).click(function(){
 		var cc =$('#'+$b).text();
@@ -89,7 +107,7 @@ for($b =1; $b<=$p; $b++){
 	</script>";
 	
 	//page2 display
-	if($p>31){
+	if($p>35){
 		echo"<script type='text/javascript'>
 	document.getElementById('left_p').style.display = 'block';
 

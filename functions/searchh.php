@@ -47,27 +47,53 @@ echo "<br/><br/><br/><table border='1' id='groupp'  style='background-color:;'  
 	}else echo "<br/><br/><br/><br/><br/><br/><br/><span style='font-size:25px; color:green;'> You did not select</span> <span style='font-size:40px; color:orange;'>Stage of Change </span><span style='font-size:25px; color:green;'>section</span>";		
 	}else echo "<br/><br/><br/><br/><br/><br/><br/><span style='font-size:25px; color:green;'> You did not select</span> <span style='font-size:40px; color:orange;'> Age </span><span style='font-size:25px; color:green;'>group!</span>";
 
+
+
+
+//pop---
+
+
+$queryd = mysqli_query($con,"select * from popout where email = '$emailss'");
+$num = mysqli_num_rows($queryd);
+if($num<1){
+$query = mysqli_query($con,"insert into popout values('id','$emailss','$stage')");
+}else 
+{
+//updating count
+mysqli_query($con,"UPDATE popout SET count = count + 1   WHERE email ='$emailss'");
+$qfecth = mysqli_query($con,"SELECT * FROM popout where email = '$emailss'");
+
+$row=mysqli_fetch_array($qfecth);
+
+//if 5 show pop			
+if($row['count']==5){
+	
+echo "<script type='text/javascript'>
+$('#pop').show();
+</script>";
+
+//reset to 0
+mysqli_query($con,"UPDATE popout SET count = 0   WHERE email ='$emailss'");
+	
+	}
+	
+
+			
+			
+			
+}
+
 ?>
-<script type="text/javascript">
 
 
+
+
+<script type='text/javascript'>
+
+
+//alert('$emailss');
 
 $('#groupp').hide();
-/*function replaceString(sourceString, patternToFind, strReplacement) {
-	var result = sourceString.replace(patternToFind,strReplacement);
-	document.getElementById('search_result').innerHTML = result;
-}
 
-var reg = /<?php //echo $k;?>/gi
-
-
-
-function doReplacement() {
-replaceString(document.getElementById('search_result').innerHTML,reg,"<span style='color:red;' >"+" <em >' <span style=''> "+"<?php //echo $k; ?>"+"</span> '</em> "+"</span>");
-
-
-}
-
-doReplacement();*/
 
 </script>

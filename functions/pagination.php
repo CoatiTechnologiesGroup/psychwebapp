@@ -36,7 +36,7 @@ while($row=mysqli_fetch_array($query)){
 
 }
 
-echo "<br/><br/><br/><br/><br/><div id='groupp'><table border='1' id=''  style='background-color:;'  ><tr ><td><center><div style='width:80px; overflow-x: hidden;'><b>Age</b></div></center></td><td ><center><div style='width:140px; overflow-x: hidden;'><b>Stage of change</b></div></center></td><td><center><div style='width:140px; overflow-x: hidden;'><b>Symptoms and Disorders</b></div></center></td><td><center><div style='width:200px; overflow-x: hidden;'><b>Psychological Treatment</b></div></center></td><td><center><div style='width:120px; overflow-x: hidden;'><b>Evidence Level</b></div></center></td><td><center><div style='width:500px; overflow-x: hidden;'><b>Basis for Evidence</b></div></center></td></tr></table><div>";
+
 
 
 

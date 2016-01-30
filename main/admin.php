@@ -37,10 +37,11 @@ if($emailad){
 
 <div id="admin">
 <div id="left_admin">
-<div id="clientAmind">client</div>
-<div id="uploadAmind">upload</div>
+<button  class="e" id="clientAmind">client</button>
+<button class="e" id="uploadAmind">upload</button>
 
-<a style="text-decoration:none;" href="adminE.php" ><div id="">grouping</div></a>
+<a  style="text-decoration:none;" href="adminE.php" >
+<button class="e" id="">grouping</button></a>
 
 
 </div>
@@ -54,8 +55,8 @@ if($emailad){
 <?php echo  clientAll($con);?>
 </div>
 
+<!-- upload input ...
 
-<div id="upload">
 
 <span id="success"></span><br/>
 
@@ -64,6 +65,10 @@ if($emailad){
 
 
 </form>
+ -->
+<div id="upload">
+
+
 <br/>
 <div id ="showUpload"></div>
 </div>

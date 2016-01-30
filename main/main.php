@@ -52,7 +52,7 @@ dropshow($con,"Symptoms_and_Disorders");
 
 </div>
 
-<center>
+
 
 
 <div id="search_result">
@@ -61,12 +61,15 @@ dropshow($con,"Symptoms_and_Disorders");
 <p></p>
 <p></p><p></p>
 <span  id="successsh" style="position:fixed; top:50px; left:10px"><img   width="45px"  height="45px" src="../pictures/loading.gif"><br/>loading...</span>
-</center>
-
-<script type="text/javascript">
 
 
+<div id='pop' style=" height:auto; width:500px; position:fixed; top:100px; right:404px; ">
 
-</script>
+<div style=" width:500px; "><span  style="float:right; border:thin solid red; border-radius:100px; padding:0 3px 0 3px;background-color:red; color:white; cursor:pointer;">X</span></div>
+<br/>
+<div style="background-color:red; height:500px; width:487px; border-radius:3px; ">ssdf</div>
+
+</div>
+
 
 <?Php include "../functions/footer.php";?>

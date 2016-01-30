@@ -1,9 +1,16 @@
+///pop out ----
+
+$('#pop').hide();
+$('#search_result, #search_body').click(function () {
+	$('#pop').hide();
+	});
+
 // JavaScript Document
 
 document.getElementById('done_search_s').disabled=true;
 document.getElementById('done_search_s').style.backgroundColor='grey';
 document.getElementById('done_search_s').style.color='white';
-document.getElementById('done_search_s').style.cursor='none';
+document.getElementById('done_search_s').style.cursor='not-allowed';
 
 function displaye(){
 	var f = $('#sel');
@@ -114,8 +121,15 @@ $.get("../functions/searchh.php", {sel:sel,sel2:sel2,sel3:sel3},function(data){
 	
 	
 $('#search_result').html(data) 	;
-
+$('#search_resulte').html(data) 	;
+$('#search_resulte').show();
+$('#left_p').hide();
+$('#page').hide();
+$('#prev').hide();
+$('#nextt').hide();
+$("#adminsrp").hide();
 $('#successsh').hide();
+$("#ii").html(" ")
 });
 }
 
