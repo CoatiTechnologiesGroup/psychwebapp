@@ -1,6 +1,48 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+#adminsrp{
+	
+	}
+
+body:active{
+ccolor:red;   
+}
+
+#groupf div:focus{
+	background-color:#E9E5E5;
+	
+	}
+	
+#page2 button{
+	background-color:white;
+	 border-radius:4px; 
+	 margin:5px;  
+	 color:#1E5B1E; 
+	 padding:0 5px 0  5px; 
+	 cursor:pointer;
+	}
+#page button{
+	background-color:white;
+	 border-radius:4px; 
+	 margin:5px;  
+	 color:#1E5B1E; 
+	 padding:0 5px 0  5px; 
+	 cursor:pointer;
+	}
+#page2 button:focus{
+background-color:green;
+color:white;
+border-color:white;
+}
+
+#page button:focus{
+background-color:green;
+color:white;
+border-color:white;
+}
+
 #admin{
 	position:absolute;
 	margin:auto;
@@ -9,7 +51,7 @@
 #dropp{
 	width:1500px;
 	position:fixed;
-	top:0px;
+	top:25px;
 	left:0px;
 	
 	z-index:30px;
@@ -18,6 +60,36 @@
 		border-bottom:thin solid green;
 			height:150px
 	}
+	
+#heade{
+	width:1500px;
+	position:fixed;
+	top:0px;
+	z-index:200px;
+	background-color:white;
+	
+	}
+#uploade{
+	width:1500px;
+	position:fixed;
+	top:25px;
+	}
+#searchee{
+	width:1500px;
+	position:fixed;
+	top:25px;
+	left:200px;
+	}
+
+#search_resulte{
+	position:relative;
+	top:160px;
+	left:50px;
+	margin-top:auto;
+	width:300px;
+	z-index:-2px;
+	dborder:thin solid green;
+	fheight:500px;}
 	
 #dropp input{
 	

@@ -45,9 +45,12 @@ switch ($Evidence) {
 		
 		$query = mysqli_query($con,"insert into groupp values('id','$age','$stage','$Symptoms','$Psychological','$Evidence','$Basis','$rank')");
 		
+	 if ($query === false) {
+    die('Invalid query: ' . mysql_error());
+}else echo "Inserted successfully :)";
 		
 	 dropbox($con,$age,$stage,$Symptoms,$Psychological,$Evidence,$Basis);
-		echo "Inserted successfully :)";
+		
 		}else echo $empty;
 	
 	
