@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 30, 2016 at 07:53 PM
+-- Generation Time: Feb 03, 2016 at 05:20 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -34,19 +34,19 @@ CREATE TABLE IF NOT EXISTS `client` (
   `password` varchar(222) NOT NULL,
   `date` varchar(222) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
 
 --
 -- Dumping data for table `client`
 --
 
 INSERT INTO `client` (`id`, `firstname`, `lastname`, `email`, `password`, `date`) VALUES
-(13, 'derek', 'odame', 'derek.odame@gmail.com', 'cd6c7dc9217fcb34a6e94e2205104b31', '  December 20,2015'),
-(14, 'kwame', 'adom', 'kwame@yahoo.com', 'e571235c0731868be23d44535115f593', '  December 20,2015'),
-(15, 'derek', 'sdfsdf', 'derek.odame@gmail.comf', 'af15d5fdacd5fdfea300e88a8e253e82', '  December 20,2015'),
-(16, 'kksks', 'kkks', 'go@yahoo.com', 'e571235c0731868be23d44535115f593', '  January 03,2016'),
-(17, 'kofi', 'otoo', 'kofi@yahoo.com', 'e571235c0731868be23d44535115f593', '  January 06,2016'),
-(18, 'sfsd', 'sfsd', 'dodame@qmail.qcc.edu', 'ca778b59456132123e92e72c8b08b90a', '  January 19,2016');
+(19, 'derek ', 'odame', 'dodame@qmail.qcc.edu', 'cd6c7dc9217fcb34a6e94e2205104b31', '  February 01,2016'),
+(20, 'derek', 'odame ', 'derek.odame@gmail.com', 'cd6c7dc9217fcb34a6e94e2205104b31', '  February 02,2016'),
+(21, 'd', 'd', 'derek.odame@gmail.coms', '11ddbaf3386aea1f2974eee984542152', '  February 02,2016'),
+(22, 'sd', 'd', 'derek.odame@gmail.comdd', '11ddbaf3386aea1f2974eee984542152', '  February 02,2016'),
+(23, 'kofi', 'otoo', 'yep@hotmail.com', '8f60c8102d29fcd525162d02eed4566b', '  February 02,2016'),
+(24, 's', 'sdfsd', 'derek.odame@hotmail.com', '11ddbaf3386aea1f2974eee984542152', '  February 02,2016');
 
 -- --------------------------------------------------------
 
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `dropbox` (
   `Evidence_Level` varchar(222) NOT NULL,
   `Basis_for_Evidence` varchar(222) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6706 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6711 ;
 
 --
 -- Dumping data for table `dropbox`
@@ -649,7 +649,12 @@ INSERT INTO `dropbox` (`id`, `Age`, `Stage_of_Change`, `Symptoms_and_Disorders`,
 (6702, '1', '1', '1', '1', '1', 'Retzlaff, R., Sydow, K., Beher, S., Haun, M. W., & Schweitzer, J. (2013). The efficacy of systemic therapy for internalizing and other disorders of childhood and adolescence: A systematic review of 38 randomized trials. Fa'),
 (6703, '1', '1', '1', '1', '1', 'Retzlaff, R., Sydow, K., Beher, S., Haun, M. W., & Schweitzer, J. (2013). The efficacy of systemic therapy for internalizing and other disorders of childhood and adolescence: A systematic review of 38 randomized trials. Fa'),
 (6704, '1', '1', '1', '1', '1', 'Retzlaff, R., Sydow, K., Beher, S., Haun, M. W., & Schweitzer, J. (2013). The efficacy of systemic therapy for internalizing and other disorders of childhood and adolescence: A systematic review of 38 randomized trials. Fa'),
-(6705, '1', '1', '1', '1', '1', 'Retzlaff, R., Sydow, K., Beher, S., Haun, M. W., & Schweitzer, J. (2013). The efficacy of systemic therapy for internalizing and other disorders of childhood and adolescence: A systematic review of 38 randomized trials. Fa');
+(6705, '1', '1', '1', '1', '1', 'Retzlaff, R., Sydow, K., Beher, S., Haun, M. W., & Schweitzer, J. (2013). The efficacy of systemic therapy for internalizing and other disorders of childhood and adolescence: A systematic review of 38 randomized trials. Fa'),
+(6706, '1', '1', '1', '1', '1', 's'),
+(6707, '1', '1', '1', '1', '1', 'sfsf'),
+(6708, '1', '1', '1', '1', '1', 'sf'),
+(6709, '1', '1', '1', '1', '1', 'aa'),
+(6710, '1', '1', '1', '1', '1', 'I guess it is good....');
 
 -- --------------------------------------------------------
 
@@ -684,7 +689,7 @@ CREATE TABLE IF NOT EXISTS `groupp` (
   `Basis_for_Evidence` varchar(3333) DEFAULT NULL,
   `ranking` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=26115 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=26132 ;
 
 --
 -- Dumping data for table `groupp`
@@ -727,8 +732,6 @@ INSERT INTO `groupp` (`id`, `Age`, `Stage_of_Change`, `Symptoms_and_Disorders`, 
 (25272, 'Child', 'Preparation', 'Anxiety (general symptoms)', 'CBT (individual or group)', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
 (25273, 'Child', 'Action', 'Anxiety (general symptoms)', 'CBT (individual or group)', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
 (25274, 'Child', 'Maintenance', 'Anxiety (general symptoms)', 'CBT (individual or group)', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
-(25275, 'Adolescent', 'Precontemplation', 'Anxiety (general symptoms)', 'CBT (individual or group)', 'Unclear', '', 1),
-(25276, 'Adolescent', 'Contemplation', 'Anxiety (general symptoms)', 'CBT (individual or group)', 'Unclear', '', 1),
 (25277, 'Adolescent', 'Preparation', 'Anxiety (general symptoms)', 'CBT (individual or group)', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
 (25278, 'Adolescent', 'Action', 'Anxiety (general symptoms)', 'CBT (individual or group)', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
 (25279, 'Adolescent', 'Maintenance', 'Anxiety (general symptoms)', 'CBT (individual or group)', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
@@ -737,7 +740,6 @@ INSERT INTO `groupp` (`id`, `Age`, `Stage_of_Change`, `Symptoms_and_Disorders`, 
 (25282, 'Child', 'Preparation', 'Anxiety (general symptoms)', 'Social Skills Training', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
 (25283, 'Child', 'Action', 'Anxiety (general symptoms)', 'Social Skills Training', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
 (25284, 'Child', 'Maintenance', 'Anxiety (general symptoms)', 'Social Skills Training', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
-(25285, 'Adolescent', 'Precontemplation', 'Anxiety (general symptoms)', 'Social Skills Training', 'Unclear', '', 1),
 (25286, 'Adolescent', 'Contemplation', 'Anxiety (general symptoms)', 'Social Skills Training', 'Unclear', '', 1),
 (25287, 'Adolescent', 'Preparation', 'Anxiety (general symptoms)', 'Social Skills Training', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
 (25288, 'Adolescent', 'Action', 'Anxiety (general symptoms)', 'Social Skills Training', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
@@ -747,8 +749,6 @@ INSERT INTO `groupp` (`id`, `Age`, `Stage_of_Change`, `Symptoms_and_Disorders`, 
 (25292, 'Child', 'Preparation', 'Anxiety (general symptoms)', 'Exposure with response prevention', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
 (25293, 'Child', 'Action', 'Anxiety (general symptoms)', 'Exposure with response prevention', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
 (25294, 'Child', 'Maintenance', 'Anxiety (general symptoms)', 'Exposure with response prevention', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
-(25295, 'Adolescent', 'Precontemplation', 'Anxiety (general symptoms)', 'Exposure with response prevention', 'Unclear', '', 1),
-(25296, 'Adolescent', 'Contemplation', 'Anxiety (general symptoms)', 'Exposure with response prevention', 'Unclear', '', 1),
 (25297, 'Adolescent', 'Preparation', 'Anxiety (general symptoms)', 'Exposure with response prevention', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
 (25298, 'Adolescent', 'Action', 'Anxiety (general symptoms)', 'Exposure with response prevention', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
 (25299, 'Adolescent', 'Maintenance', 'Anxiety (general symptoms)', 'Exposure with response prevention', 'Good', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 4),
@@ -757,8 +757,8 @@ INSERT INTO `groupp` (`id`, `Age`, `Stage_of_Change`, `Symptoms_and_Disorders`, 
 (25302, 'Child', 'Preparation', 'Anxiety (general symptoms)', 'Family-based CBT', 'Fair', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 3),
 (25303, 'Child', 'Action', 'Anxiety (general symptoms)', 'Family-based CBT', 'Fair', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 3),
 (25304, 'Child', 'Maintenance', 'Anxiety (general symptoms)', 'Family-based CBT', 'Fair', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 3),
-(25305, 'Adolescent', 'Precontemplation', 'Anxiety (general symptoms)', 'Family-based CBT', 'Unclear', 'Â ', 1),
-(25306, 'Adolescent', 'Contemplation', 'Anxiety (general symptoms)', 'Family-based CBT', 'Unclear', '', 1),
+(25305, ' 6', 'Precontemplation', 'Anxiety (general symptoms)', 'Family-based CBT', 'Unclear', 'Â ', 1),
+(25306, '25306 Adolescent', 'Contemplation', 'Anxiety (general symptoms)', 'Family-based CBT', 'Unclear', '', 1),
 (25307, 'Adolescent', 'Preparation', 'Anxiety (general symptoms)', 'Family-based CBT', 'Fair', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 3),
 (25308, 'Adolescent', 'Action', 'Anxiety (general symptoms)', 'Family-based CBT', 'Fair', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 3),
 (25309, 'Adolescent', 'Maintenance', 'Anxiety (general symptoms)', 'Family-based CBT', 'Fair', 'Silverman, W. K., Pina, A. A., & Viswesvaran, C. (2008). Evidence-based psychosocial treatments for phobic and anxiety disorders in children and adolescents: A review and meta-analyses. Journal of Clinical Child & Adolescent Psychology, 37, 105-130.', 3),
@@ -1170,12 +1170,10 @@ INSERT INTO `groupp` (`id`, `Age`, `Stage_of_Change`, `Symptoms_and_Disorders`, 
 (25712, 'Adult', 'Preparation', 'OCD', 'Exposure with Response Prevention (self-guided)', 'Good', 'Rosa-AlcÃ¡zar, A. I., SÃ¡nchez-Meca, J., GÃ³mez-Conesa, A., & MarÃ­n-MartÃ­nez, F. (2008). Psychological treatment of obsessiveâ€“compulsive disorder: A meta-analysis. Clinical Psychology Review, 28(8), 1310-1325. doi:10.1016/j.cpr.2008.07.001 ; Foa, E. B., Simpson, H. B., Liebowitz, M. R., Powers, M. B., Rosenfield, D., Cahill, S. P.. . Williams, M. T. (2013). Six-month follow-up of a randomized controlled trial augmenting serotonin reuptake inhibitor treatment with exposure and ritual prevention for obsessive-compulsive disorder. The Journal of Clinical Psychiatry, 74(5), 464. ; Simpson, H. B., Foa, E. B., Liebowitz, M. R., Ledley, D. R., Huppert, J. D., Cahill, S.. . Petkova, E. (2008). A randomized, controlled trial of cognitive-behavioral therapy for augmenting pharmacotherapy in obsessive-compulsive disorder. The American Journal of Psychiatry, 165(5), 621-630. doi:10.1176/appi.ajp.2007.07091440', 4),
 (25713, 'Adult', 'Action', 'OCD', 'Exposure with Response Prevention (self-guided)', 'Good', 'Rosa-AlcÃ¡zar, A. I., SÃ¡nchez-Meca, J., GÃ³mez-Conesa, A., & MarÃ­n-MartÃ­nez, F. (2008). Psychological treatment of obsessiveâ€“compulsive disorder: A meta-analysis. Clinical Psychology Review, 28(8), 1310-1325. doi:10.1016/j.cpr.2008.07.001 ; Foa, E. B., Simpson, H. B., Liebowitz, M. R., Powers, M. B., Rosenfield, D., Cahill, S. P.. . Williams, M. T. (2013). Six-month follow-up of a randomized controlled trial augmenting serotonin reuptake inhibitor treatment with exposure and ritual prevention for obsessive-compulsive disorder. The Journal of Clinical Psychiatry, 74(5), 464. ; Simpson, H. B., Foa, E. B., Liebowitz, M. R., Ledley, D. R., Huppert, J. D., Cahill, S.. . Petkova, E. (2008). A randomized, controlled trial of cognitive-behavioral therapy for augmenting pharmacotherapy in obsessive-compulsive disorder. The American Journal of Psychiatry, 165(5), 621-630. doi:10.1176/appi.ajp.2007.07091440', 4),
 (25714, 'Adult', 'Maintenance', 'OCD', 'Exposure with Response Prevention (self-guided)', 'Good', 'Rosa-AlcÃ¡zar, A. I., SÃ¡nchez-Meca, J., GÃ³mez-Conesa, A., & MarÃ­n-MartÃ­nez, F. (2008). Psychological treatment of obsessiveâ€“compulsive disorder: A meta-analysis. Clinical Psychology Review, 28(8), 1310-1325. doi:10.1016/j.cpr.2008.07.001 ; Foa, E. B., Simpson, H. B., Liebowitz, M. R., Powers, M. B., Rosenfield, D., Cahill, S. P.. . Williams, M. T. (2013). Six-month follow-up of a randomized controlled trial augmenting serotonin reuptake inhibitor treatment with exposure and ritual prevention for obsessive-compulsive disorder. The Journal of Clinical Psychiatry, 74(5), 464. ; Simpson, H. B., Foa, E. B., Liebowitz, M. R., Ledley, D. R., Huppert, J. D., Cahill, S.. . Petkova, E. (2008). A randomized, controlled trial of cognitive-behavioral therapy for augmenting pharmacotherapy in obsessive-compulsive disorder. The American Journal of Psychiatry, 165(5), 621-630. doi:10.1176/appi.ajp.2007.07091440', 4),
-(25715, 'Adult', 'Precontemplation', 'OCD', 'CBT', 'Unclear', '', 1),
 (25716, 'Adult', 'Contemplation', 'OCD', 'CBT', 'Unclear', '', 1),
 (25717, 'Adult', 'Preparation', 'OCD', 'CBT', 'Excellent', 'Rosa-AlcÃ¡zar, A. I., SÃ¡nchez-Meca, J., GÃ³mez-Conesa, A., & MarÃ­n-MartÃ­nez, F. (2008). Psychological treatment of obsessiveâ€“compulsive disorder: A meta-analysis. Clinical Psychology Review, 28(8), 1310-1325. doi:10.1016/j.cpr.2008.07.001 ; Foa, E. B., Simpson, H. B., Liebowitz, M. R., Powers, M. B., Rosenfield, D., Cahill, S. P.. . Williams, M. T. (2013). Six-month follow-up of a randomized controlled trial augmenting serotonin reuptake inhibitor treatment with exposure and ritual prevention for obsessive-compulsive disorder. The Journal of Clinical Psychiatry, 74(5), 464. ; Simpson, H. B., Foa, E. B., Liebowitz, M. R., Ledley, D. R., Huppert, J. D., Cahill, S.. . Petkova, E. (2008). A randomized, controlled trial of cognitive-behavioral therapy for augmenting pharmacotherapy in obsessive-compulsive disorder. The American Journal of Psychiatry, 165(5), 621-630. doi:10.1176/appi.ajp.2007.07091440', 5),
 (25718, 'Adult', 'Action', 'OCD', 'CBT', 'Excellent', 'Rosa-AlcÃ¡zar, A. I., SÃ¡nchez-Meca, J., GÃ³mez-Conesa, A., & MarÃ­n-MartÃ­nez, F. (2008). Psychological treatment of obsessiveâ€“compulsive disorder: A meta-analysis. Clinical Psychology Review, 28(8), 1310-1325. doi:10.1016/j.cpr.2008.07.001 ; Foa, E. B., Simpson, H. B., Liebowitz, M. R., Powers, M. B., Rosenfield, D., Cahill, S. P.. . Williams, M. T. (2013). Six-month follow-up of a randomized controlled trial augmenting serotonin reuptake inhibitor treatment with exposure and ritual prevention for obsessive-compulsive disorder. The Journal of Clinical Psychiatry, 74(5), 464. ; Simpson, H. B., Foa, E. B., Liebowitz, M. R., Ledley, D. R., Huppert, J. D., Cahill, S.. . Petkova, E. (2008). A randomized, controlled trial of cognitive-behavioral therapy for augmenting pharmacotherapy in obsessive-compulsive disorder. The American Journal of Psychiatry, 165(5), 621-630. doi:10.1176/appi.ajp.2007.07091440', 5),
 (25719, 'Adult', 'Maintenance', 'OCD', 'CBT', 'Excellent', 'Rosa-AlcÃ¡zar, A. I., SÃ¡nchez-Meca, J., GÃ³mez-Conesa, A., & MarÃ­n-MartÃ­nez, F. (2008). Psychological treatment of obsessiveâ€“compulsive disorder: A meta-analysis. Clinical Psychology Review, 28(8), 1310-1325. doi:10.1016/j.cpr.2008.07.001 ; Foa, E. B., Simpson, H. B., Liebowitz, M. R., Powers, M. B., Rosenfield, D., Cahill, S. P.. . Williams, M. T. (2013). Six-month follow-up of a randomized controlled trial augmenting serotonin reuptake inhibitor treatment with exposure and ritual prevention for obsessive-compulsive disorder. The Journal of Clinical Psychiatry, 74(5), 464. ; Simpson, H. B., Foa, E. B., Liebowitz, M. R., Ledley, D. R., Huppert, J. D., Cahill, S.. . Petkova, E. (2008). A randomized, controlled trial of cognitive-behavioral therapy for augmenting pharmacotherapy in obsessive-compulsive disorder. The American Journal of Psychiatry, 165(5), 621-630. doi:10.1176/appi.ajp.2007.07091440', 5),
-(25720, 'Adult', 'Precontemplation', 'OCD', 'Acceptance and Commitment Therapy', 'Unclear', '', 1),
 (25721, 'Adult', 'Contemplation', 'OCD', 'Acceptance and Commitment Therapy', 'Unclear', '', 1),
 (25722, 'Adult', 'Preparation', 'OCD', 'Acceptance and Commitment Therapy', 'Fair', 'Twohig, M. P., Hayes, S. C., Plumb, J. C., Pruitt, L. D., Collins, A. B., Hazlett-Stevens, H., & Woidneck, M. R. (2010). A randomized clinical trial of acceptance and commitment therapy versus progressive relaxation training for obsessive-compulsive disorder. Journal of Consulting and Clinical Psychology, 78(5), 705-716. doi:10.1037/a0020508', 3),
 (25723, 'Adult', 'Action', 'OCD', 'Acceptance and Commitment Therapy', 'Fair', 'Twohig, M. P., Hayes, S. C., Plumb, J. C., Pruitt, L. D., Collins, A. B., Hazlett-Stevens, H., & Woidneck, M. R. (2010). A randomized clinical trial of acceptance and commitment therapy versus progressive relaxation training for obsessive-compulsive disorder. Journal of Consulting and Clinical Psychology, 78(5), 705-716. doi:10.1037/a0020508', 3),
@@ -1384,7 +1382,7 @@ INSERT INTO `groupp` (`id`, `Age`, `Stage_of_Change`, `Symptoms_and_Disorders`, 
 (25928, 'Adolescent', 'Action', 'Self-injurious thoughts and behavior', 'CBT (individual + family + parent training)', 'Good', 'Glenn, C. R., Franklin, J. C., & Nock, M. K. (2014). Evidence-Based Psychosocial Treatments for Self-Injurious Thoughts and Behaviors in Youth. Journal of Clinical Child & Adolescent Psychology, 44(1), 1-29.', 4),
 (25929, 'Adolescent', 'Maintenance', 'Self-injurious thoughts and behavior', 'CBT (individual + family + parent training)', 'Good', 'Glenn, C. R., Franklin, J. C., & Nock, M. K. (2014). Evidence-Based Psychosocial Treatments for Self-Injurious Thoughts and Behaviors in Youth. Journal of Clinical Child & Adolescent Psychology, 44(1), 1-29.', 4),
 (25930, 'Child', 'Precontemplation', 'Self-injurious thoughts and behavior', 'Attachment Family Therapy', 'Unclear', '', 1),
-(25931, 'Child', 'Contemplation', 'Self-injurious thoughts and behavior', 'Attachment Family Therapy', 'Unclear', '', 1),
+(25931, ' adult', 'Contemplation', 'Self-injurious thoughts and behavior', 'Attachment Family Therapy', 'Unclear', '', 1),
 (25932, 'Child', 'Preparation', 'Self-injurious thoughts and behavior', 'Attachment Family Therapy', 'Good', 'Glenn, C. R., Franklin, J. C., & Nock, M. K. (2014). Evidence-Based Psychosocial Treatments for Self-Injurious Thoughts and Behaviors in Youth. Journal of Clinical Child & Adolescent Psychology, 44(1), 1-29.', 4),
 (25933, 'Child', 'Action', 'Self-injurious thoughts and behavior', 'Attachment Family Therapy', 'Good', 'Glenn, C. R., Franklin, J. C., & Nock, M. K. (2014). Evidence-Based Psychosocial Treatments for Self-Injurious Thoughts and Behaviors in Youth. Journal of Clinical Child & Adolescent Psychology, 44(1), 1-29.', 4),
 (25934, 'Child', 'Maintenance', 'Self-injurious thoughts and behavior', 'Attachment Family Therapy', 'Good', 'Glenn, C. R., Franklin, J. C., & Nock, M. K. (2014). Evidence-Based Psychosocial Treatments for Self-Injurious Thoughts and Behaviors in Youth. Journal of Clinical Child & Adolescent Psychology, 44(1), 1-29.', 4),
@@ -1424,7 +1422,6 @@ INSERT INTO `groupp` (`id`, `Age`, `Stage_of_Change`, `Symptoms_and_Disorders`, 
 (25968, 'Adolescent', 'Action', 'Self-injurious thoughts and behavior', 'CBT (individual)', 'Experimental', 'Glenn, C. R., Franklin, J. C., & Nock, M. K. (2014). Evidence-Based Psychosocial Treatments for Self-Injurious Thoughts and Behaviors in Youth. Journal of Clinical Child & Adolescent Psychology, 44(1), 1-29.', 2),
 (25969, 'Adolescent', 'Maintenance', 'Self-injurious thoughts and behavior', 'CBT (individual)', 'Experimental', 'Glenn, C. R., Franklin, J. C., & Nock, M. K. (2014). Evidence-Based Psychosocial Treatments for Self-Injurious Thoughts and Behaviors in Youth. Journal of Clinical Child & Adolescent Psychology, 44(1), 1-29.', 2),
 (25970, 'Child', 'Precontemplation', 'Self-injurious thoughts and behavior', 'Dialectical Behavior Therapy', 'Unclear', '', 1),
-(25971, 'Child', 'Contemplation', 'Self-injurious thoughts and behavior', 'Dialectical Behavior Therapy', 'Unclear', '', 1),
 (25972, 'Child', 'Preparation', 'Self-injurious thoughts and behavior', 'Dialectical Behavior Therapy', 'Experimental', 'Glenn, C. R., Franklin, J. C., & Nock, M. K. (2014). Evidence-Based Psychosocial Treatments for Self-Injurious Thoughts and Behaviors in Youth. Journal of Clinical Child & Adolescent Psychology, 44(1), 1-29.', 2),
 (25973, 'Child', 'Action', 'Self-injurious thoughts and behavior', 'Dialectical Behavior Therapy', 'Experimental', 'Glenn, C. R., Franklin, J. C., & Nock, M. K. (2014). Evidence-Based Psychosocial Treatments for Self-Injurious Thoughts and Behaviors in Youth. Journal of Clinical Child & Adolescent Psychology, 44(1), 1-29.', 2),
 (25974, 'Child', 'Maintenance', 'Self-injurious thoughts and behavior', 'Dialectical Behavior Therapy', 'Experimental', 'Glenn, C. R., Franklin, J. C., & Nock, M. K. (2014). Evidence-Based Psychosocial Treatments for Self-Injurious Thoughts and Behaviors in Youth. Journal of Clinical Child & Adolescent Psychology, 44(1), 1-29.', 2),
@@ -1554,14 +1551,9 @@ INSERT INTO `groupp` (`id`, `Age`, `Stage_of_Change`, `Symptoms_and_Disorders`, 
 (26097, 'Adult', 'Preparation', 'Borderline Personality', 'Schema Therapy', 'Good', 'Bekker, M. H. J., Arntz, A., Karreman, A., & Sempertegui Vallejo, G. A. (2013). Schema therapy for borderline personality disorder: A comprehensive review of its empirical foundations, effectiveness and implementation possibilities. Clinical Psychology Review, 33(3), 426-447. doi:10.1016/j.cpr.2012.11.006 ; Giesen-Bloo, J., van Dyck, R., Spinhoven, P., van Tilburg, W., Dirksen, C., van Asselt, T., et al. (2006). Outpatient psychotherapy for borderline personality disorder: Randomized trial of schema-focused therapy vs. transference-focused psychotherapy. Archives of General Psychiatry, 63, 649â€“658.', 4),
 (26098, 'Adult', 'Action', 'Borderline Personality', 'Schema Therapy', 'Good', 'Bekker, M. H. J., Arntz, A., Karreman, A., & Sempertegui Vallejo, G. A. (2013). Schema therapy for borderline personality disorder: A comprehensive review of its empirical foundations, effectiveness and implementation possibilities. Clinical Psychology Review, 33(3), 426-447. doi:10.1016/j.cpr.2012.11.006 ; Giesen-Bloo, J., van Dyck, R., Spinhoven, P., van Tilburg, W., Dirksen, C., van Asselt, T., et al. (2006). Outpatient psychotherapy for borderline personality disorder: Randomized trial of schema-focused therapy vs. transference-focused psychotherapy. Archives of General Psychiatry, 63, 649â€“658.', 4),
 (26099, 'Adult', 'Maintenance', 'Borderline Personality', 'Schema Therapy', 'Good', 'Bekker, M. H. J., Arntz, A., Karreman, A., & Sempertegui Vallejo, G. A. (2013). Schema therapy for borderline personality disorder: A comprehensive review of its empirical foundations, effectiveness and implementation possibilities. Clinical Psychology Review, 33(3), 426-447. doi:10.1016/j.cpr.2012.11.006 ; Giesen-Bloo, J., van Dyck, R., Spinhoven, P., van Tilburg, W., Dirksen, C., van Asselt, T., et al. (2006). Outpatient psychotherapy for borderline personality disorder: Randomized trial of schema-focused therapy vs. transference-focused psychotherapy. Archives of General Psychiatry, 63, 649â€“658.', 4),
-(26100, 'Adult', 'Precontemplation', 'Self-injurious thoughts and behavior', 'Dialectical Behavior Therapy', 'Unclear', '', 1),
-(26101, 'Adult', 'Contemplation', 'Self-injurious thoughts and behavior', 'Dialectical Behavior Therapy', 'Unclear', '', 1),
-(26102, 'Adult', 'Preparation', 'Self-injurious thoughts and behavior', 'Dialectical Behavior Therapy', 'Good', 'Arntz, A. R., Muris, M., Egger, J. I. M., Goethem, A. A. J. v., & Mulders, D. (2012). Reduction of self-injury and improvement of coping behavior during dialectical behaviour therapy (DBT) of patients with borderline personality disorder. International Journal of Psychology and Psychological Therapy, 12(1), 21-34. ; Kliem, S., KrÃ¶ger, C., & Kosfelder, J. (2010). Dialectical behavior therapy for borderline personality disorder: A meta-analysis using mixed-effects modeling. Journal of Consulting and Clinical Psychology, 78(6), 936-951. doi:10.1037/a0021015', 4),
-(26103, 'Adult', 'Action', 'Self-injurious thoughts and behavior', 'Dialectical Behavior Therapy', 'Good', 'Arntz, A. R., Muris, M., Egger, J. I. M., Goethem, A. A. J. v., & Mulders, D. (2012). Reduction of self-injury and improvement of coping behavior during dialectical behaviour therapy (DBT) of patients with borderline personality disorder. International Journal of Psychology and Psychological Therapy, 12(1), 21-34. ; Kliem, S., KrÃ¶ger, C., & Kosfelder, J. (2010). Dialectical behavior therapy for borderline personality disorder: A meta-analysis using mixed-effects modeling. Journal of Consulting and Clinical Psychology, 78(6), 936-951. doi:10.1037/a0021015', 4),
-(26104, 'Adult', 'Maintenance', 'Self-injurious thoughts and behavior', 'Dialectical Behavior Therapy', 'Good', 'Arntz, A. R., Muris, M., Egger, J. I. M., Goethem, A. A. J. v., & Mulders, D. (2012). Reduction of self-injury and improvement of coping behavior during dialectical behaviour therapy (DBT) of patients with borderline personality disorder. International Journal of Psychology and Psychological Therapy, 12(1), 21-34. ; Kliem, S., KrÃ¶ger, C., & Kosfelder, J. (2010). Dialectical behavior therapy for borderline personality disorder: A meta-analysis using mixed-effects modeling. Journal of Consulting and Clinical Psychology, 78(6), 936-951. doi:10.1037/a0021015', 4),
-(26105, 'Child ', 'Maintenance ', 'Bipolar Disorder ', 'Neurofeedback training ', 'Good ', 'Whatever goes, right?', 0),
-(26106, 'adult', 'what ever', 'mwwe', 'done', 'elxe', 'what the hell is wrong with this dude', 0),
-(26114, '1', '2', '3', '4', '5', '6', 0);
+(26100, 'Adult', 'Precontemplation', 'Self-injurious thoughts and behavior', 'Dialectical Behavior Therapy', 'good', 'Hmm, that what they say. so you take is or leave it. :)', 1),
+(26101, 'Child', 'Contemplation', 'Self-injurious thoughts and behavior', 'Dialectical Behavior Therapy', 'extreem', '', 1),
+(26131, 'Adolescent ', 'Precontemplation ', 'Anxiety (general symptoms) ', 'Family Therapy for Eating Disorders ', 'Good ', 'I guess it is good....', 0);
 
 -- --------------------------------------------------------
 
@@ -1595,8 +1587,8 @@ CREATE TABLE IF NOT EXISTS `popout` (
 --
 
 INSERT INTO `popout` (`id`, `email`, `count`) VALUES
-(3, 'derek.odame@gmail.com', 0),
-(4, '', 1);
+(3, 'derek.odame@gmail.com', 4),
+(4, '', 2);
 
 -- --------------------------------------------------------
 
@@ -1609,7 +1601,7 @@ CREATE TABLE IF NOT EXISTS `test` (
   `a` varchar(222) NOT NULL,
   `b` varchar(222) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
 
 --
 -- Dumping data for table `test`
@@ -1629,7 +1621,10 @@ INSERT INTO `test` (`id`, `a`, `b`) VALUES
 (11, 'B.xlsx', '  January 27,2016'),
 (12, 'B.xlsx', '  January 27,2016'),
 (13, 'B.xlsx', '  January 27,2016'),
-(14, 'B.xlsx', '  January 27,2016');
+(14, 'B.xlsx', '  January 27,2016'),
+(15, 'ages.xlsx', '  January 31,2016'),
+(16, 'ages.xlsx', '  February 03,2016'),
+(17, 'ages.xlsx', '  February 03,2016');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

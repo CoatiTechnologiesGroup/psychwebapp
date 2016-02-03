@@ -22,9 +22,12 @@ include"../functions/drop.php";
 
 </div>
 
-<div id="heade"><span id='ahome' style=""><a href="admin.php">Back</a></span>
+<div id="heade">
 
-<span id="insertm" title="hi">insert manually</span> || <span id="uploadee">upload excel </span>||<span id="searched"> search </span>||<span id="cliente"> client </span>
+<span id="insertm"  style=" cursor:pointer; font-size:21px; color:green;  border-right:thin solid green; padding:2px;">Insert manually</span> 
+ <span id="uploadee" style=" cursor:pointer; font-size:21px; color:green;  ">Upload</span>
+ <span id="searched" style="cursor:pointer; font-size:21px; color:green; border-left:thin solid green;  padding:2px;"> Search </span>
+ <span id="cliente" ><a  href="admin.php" style=" text-decoration:none; color:orange; border-left:thin solid green; padding:2px;"> Client</a> </span>
 
 </div>
 
@@ -36,7 +39,7 @@ include"../functions/drop.php";
 <span id="success"></span><br/>
 
 <fsorm method="post"  enctype="multipart/form-data">
-<input type="file" name="excel" id="excel"   multiple /><input name='sumb' id="excelb" type="button"   onclick="uploadfile();"value="submit"/> <span  id="successs">loading...<img   width="15px"  height="15px"src="../pictures/loading.gif"></span>
+<input type="file" name="excel" id="excel"   multiple /><input name='sumb' id="excelb" type="button"   onclick="uploadfile();"value="Insert"/> <span  id="successs">loading...<img   width="15px"  height="15px"src="../pictures/loading.gif"></span>
 
 
 </form></div>
@@ -69,7 +72,7 @@ dropshow($con,"Symptoms_and_Disorders");
 ?>
 
 </select>
-<input id="done_search_s" type="button" onclick="searchh();"  value="search"/>
+<input style="font-size:20px;" id="done_search_s" type="button" onclick="searchhe();"  value="search"/>
 </fordm>
 
 </div>

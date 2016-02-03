@@ -1,7 +1,7 @@
 ///pop out ----
 
 $('#pop').hide();
-$('#search_result, #search_body').click(function () {
+$('#popx').click(function () {
 	$('#pop').hide();
 	});
 
@@ -129,9 +129,33 @@ $('#prev').hide();
 $('#nextt').hide();
 $("#adminsrp").hide();
 $('#successsh').hide();
-$("#ii").html(" ")
+$("#ii").html(" ");
 });
 }
 
+function searchhe(){
+	
+
+$('#successsh').show();
+
+var sel = $('#sel').val();
+var sel2 = $('#sel2').val();
+var sel3 = $('#sel3').val();
+
+$.get("../functions/searchhhe.php", {sel:sel,sel2:sel2,sel3:sel3},function(data){
+	
+	
+
+$('#search_resulte').html(data) 	;
+$('#search_resulte').show();
+$('#left_p').hide();
+$('#page').hide();
+$('#prev').hide();
+$('#nextt').hide();
+$("#adminsrp").hide();
+$('#successsh').hide();
+$("#ii").html(" ");
+});
+}
 
 //--- disable

@@ -52,7 +52,7 @@ function adde(){
 		
 		$.post('../functions/insertshow.php', {age:age,stage:stage,symptoms:symptoms,psychological:psychological,evidence:evidence,basis:basis},function(data){
 			
-				//alert(data);
+				
 				$("#s").html(data);
 				$("#s").show();
 			//clear
@@ -263,6 +263,27 @@ function delep(d){
 	$("#ii").show();
 	$("#s").hide();
 	
+	
+			
+				});
+		
+}
+//deleting for search
+function deles(d){
+		var v = $('#hidden').text();
+		$('.'+d).hide('slow');
+		
+		$.post('../functions/deleteadmine.php', {deletee:d},function(data){
+			
+$('#search_resulte').show();
+//$('#search_resulte').load('../functions/searchh.php');
+$('#left_p').hide();
+$('#page').hide();
+$('#prev').hide();
+$('#nextt').hide();
+$("#adminsrp").hide();
+$('#successsh').hide();
+$("#ii").html(" ");
 	
 			
 				});

@@ -27,8 +27,9 @@ if($emailss){
 <body>
 <div id="top">
 <span id="logout"><a  href="../functions/logout.php" >logout</a></span> 
-<span style="color:black;float:left;font-size:25px;">|</span>
-<span style="color:green; float:left; font-size:25px; cursor:pointer;"> settings</span>
+<span style="color:black;float:left;font-size:25px; ">|</span>
+<span id="setting" > 
+<a style="" href="./profilec.php">settings</a></span>
 <span id= "welcome"><?php echo "welcome $first $last "; ?></span>
 
 </div>

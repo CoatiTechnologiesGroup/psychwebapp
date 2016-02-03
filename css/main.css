@@ -2,20 +2,52 @@
 /* CSS Document */
 
 #top{ 
-position:absolute;
-width:1100px;
-float:right;
+position:relative;
 
-	
+
+
+
+	margin:auto;
+	width:1220px;
 	}
 
 #logout a{
 	float: left;
-	color: #EB1507;
+	color: white;
 	font-size: 26px;
-	
+	text-decoration:none;
+	background-color:#9E882B;
+	border-radius:4px;
+	padding: 0 5px 0 5px;
 }
 
+#logout a:hover{
+	float: left;
+	color: white;
+	font-size: 26px;
+	text-decoration:none;
+	background-color:#964F00;
+	border-radius:4px;
+	padding: 0 5px 0 5px;
+}
+
+#setting a{
+
+color:#30DB29;
+float:left;
+ text-decoration:none; 
+ font-size:25px; 
+ cursor:pointer;
+}
+
+#setting a:hover{
+
+color:green;
+float:left;
+ text-decoration:none; 
+ font-size:25px; 
+ cursor:pointer;
+}
 
 #welcome{float:right;
 color:#CD9916;
@@ -23,7 +55,7 @@ font-size:26px;}
 
 /*search area ---------------*/
 #search_body{
-	width: 1160px;
+	width: 1220px;
 	top: 50px;
 	position: relative;
 	border-top: thin solid #99CBAD;
@@ -83,8 +115,8 @@ font-size:26px;}
 	top:5px;
 	position:relative;
 	font-size: 24px;
-	border-right: thin solid #99CBAD ;
-	width:820px;
+	bordser-right: thin solid #99CBAD ;
+	width:1220px;
 
 	
 	
@@ -124,9 +156,9 @@ font-size:26px;}
 #search_result{
 	position:relative;
 	top:60px;
-	left:30px;
-	margin-top:auto;
-	width:900px;
+	
+	margin:auto;
+	width:1220px;
 	dborder:thin solid green;
 	fheight:500px;}
 	

@@ -1,22 +1,51 @@
 // JavaScript Document
+//sign in -----------
+function signin(){
+	var ee = $("#iemail").val();
+	var piy = $("#ipassword").val();
 
-
-//login
-/*$('#ilogin').prop("disabled",true);
-$('#iemail').keypress(function(){
-if($('#iemail').val()==0){
+$.post('functions/login.php', {ee:ee,piy:piy},function(data){
+	$("#ss").html(data);
 	
-$('#ilogin').prop("disabled",true);
+	if(data =="."){
+		window.location = "main/main.php";
+		}
 	
+	});
+
+}
+
+//register ----------
+
+function register(){
 	
-	}else{
-		$('#ilogin').prop("disabled",false);
-		 }
+	var f = $("#first").val();
+	var l = $("#last").val();
+	var e = $("#email").val();
+	var p = $("#password").val();
+	var pc = $("#conpass").val();
 
-});
-	*/	 
 
-function copyy(){
-	var s =$('#email').val();
-	alert(s);
-	}
+$.post('functions/register.php', {f:f,l:l,e:e,p:p,pc:pc},function(data){
+	$("#regs").html(data);
+	
+	if(data =="."){
+		window.location = "main/main.php";
+		}
+	
+	});
+
+}
+
+$('#reg').hide();
+
+$('#regn').click(function (){
+	$('#reg').show();
+	$('#login').hide();
+	});
+
+$('#sin').click(function (){
+	$('#reg').hide();
+	$('#login').show();
+	});
+	

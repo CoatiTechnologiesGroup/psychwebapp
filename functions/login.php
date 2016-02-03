@@ -1,6 +1,9 @@
 <?php 
-include"error.php";
-require("connection.php");
+
+
+include"../functions/connection.php";
+include"../functions/error.php";
+
 session_start();
 
 $emailss = $_SESSION['email'];
@@ -9,19 +12,20 @@ $first = $_SESSION['firstname'];
 $idd = $_SESSION['id'];
 
 
-$iemail = $_POST['iemail'];
-$ipassword = $_POST['ipassword'];
-$login = $_POST['ilogin'];
+$iemail = mysqli_real_escape_string($con,nl2br(htmlspecialchars($_POST['ee'])));
+$ipassword = mysqli_real_escape_string($con,nl2br(htmlspecialchars($_POST['piy'])));
+//$login = $_POST['ilogin'];
 
 
-if($login){
 	if($iemail){
+		
 		if($ipassword){
 			$hipass = md5($ipassword);
 			$query = mysqli_query($con,"SELECT * FROM client WHERE email = '$iemail' AND password ='$hipass'");
 $numrows = mysqli_num_rows($query);
 
 if($numrows ==1){
+	echo ".";
 while($row = mysqli_fetch_assoc($query)){
 			
 			
@@ -38,14 +42,12 @@ while($row = mysqli_fetch_assoc($query)){
 			}
 			
 			//if session exist 
-					if($emailss){
-		header("location: ./main/main.php");
-		}else header("location: ./main/main.php");
-				
-}else $applyI ="Email or Password does not exist!!<br/> <a href='#' style='color:black; background-color:white;'> Forgot Password</a>";
-}else $applyI=" Input password";
-}else $applyI="Input email";
-}
+			
+}else echo "Email or Password don't exist!!";
+
+}else echo  " Input password";
+}else echo "Input email";
+
 
 
 

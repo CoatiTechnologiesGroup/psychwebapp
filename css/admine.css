@@ -5,6 +5,33 @@
 #adminsrp{
 	
 	}
+	
+#searchee select{
+	position:relative;
+	
+	font-size: 20px;
+	
+	color: black;
+	width:240px;
+	border: thin  dotted  green;
+	
+	mmargin:5px
+	
+	
+}
+#searchee option{
+	position:relative;
+	
+	font-size: 20px;
+	
+	color: #0FD70C;
+	width:300px;
+	border:thin solid green;
+	
+	margin:5px
+	
+	
+}
 
 body:active{
 ccolor:red;   
@@ -67,18 +94,21 @@ border-color:white;
 	top:0px;
 	z-index:200px;
 	background-color:white;
+	border-bottom:thin solid #58BF71;
 	
 	}
 #uploade{
 	width:1500px;
 	position:fixed;
 	top:25px;
+	background-color:white;
 	}
 #searchee{
 	width:1500px;
 	position:fixed;
 	top:25px;
 	left:200px;
+	background-color:white;
 	}
 
 #search_resulte{
@@ -218,5 +248,18 @@ border-color:white;
 	background-color: white;
 	cursor:pointer;
 	
+	}
+	
+#excel{
+	
+
+	font-size:24px;
+	border:thin dotted green;
+	}
+#excelb{
+	
+
+	font-size:25px;
+	border:thin solic green;
 	}
 	

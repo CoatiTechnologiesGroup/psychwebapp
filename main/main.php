@@ -65,7 +65,7 @@ dropshow($con,"Symptoms_and_Disorders");
 
 <div id='pop' style=" height:auto; width:500px; position:fixed; top:100px; right:404px; ">
 
-<div style=" width:500px; "><span  style="float:right; border:thin solid red; border-radius:100px; padding:0 3px 0 3px;background-color:red; color:white; cursor:pointer;">X</span></div>
+<div style=" width:500px; "><span  style="float:right; border:thin solid red; border-radius:100px; padding:0 3px 0 3px;background-color:red; color:white; cursor:pointer;" id="popx">X</span></div>
 <br/>
 <div style="background-color:red; height:500px; width:487px; border-radius:3px; ">ssdf</div>
 
