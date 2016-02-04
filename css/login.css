@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
+
 #s{
 	background-color: #000000;
 	color:#595959;
@@ -31,6 +32,14 @@ top:100px
 	background-repeat:no-repeat;
 	background-position:left  ;
 	background-size:  100px;
+	}
+#sin{
+	background-image:url(../pictures/signinr.png);
+	background-repeat:no-repeat;
+	background-position:left  ;
+	height:80px;
+	background-size:  100px;
+	cursor:pointer;
 	}
 #login input{
 	width:308px;
@@ -88,3 +97,5 @@ input{
 #conpass{width:308px;}
 #regdone{ width:154px; cursor:pointer;}
 #reset{width:154px; cursor:pointer;}
+
+

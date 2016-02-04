@@ -37,7 +37,7 @@ if($emailss){
 <span  id="" ><div id="signin" style="height:50px;" ></div>
 </span></div>
 <div>
-<span><center>Email</center></span><input  autofocus name ="iemail" id="iemail" type="email"  placeholder="email"  required value=""  ></div>
+<span><center>Email</center></span><input data-tooltip="I am a tooltip"  autofocus name ="iemail" id="iemail" type="email"  placeholder="email"  required value=""  ></div>
 <div>
 <span><center>Password</center></span>
 <input name ="ipassword" id="ipassword" type="password" placeholder="password" required ></div>
@@ -65,10 +65,10 @@ if($emailss){
 <div><input name ="password" id="password" type="password" placeholder="password" required value=""></div>
 <div><input  name ="conpass" id="conpass" type="password" placeholder="confirm password" required value=""></div>
 <div><input name ="reset" id="reset" type="button" value="Reset">
-<input onClick="register();" name ="regdone" id="regdone" type="submit" value="Done"></div><br/>
+<input onClick="register();" name ="regdone" id="regdone" type="submit" value="Done"></div>
 </form>
 
-<div id="sin">SignIn</div>
+<div id="sin"></div>
 </div>
 
 <?php 

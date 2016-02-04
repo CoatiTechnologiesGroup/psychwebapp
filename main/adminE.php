@@ -24,9 +24,9 @@ include"../functions/drop.php";
 
 <div id="heade">
 
-<span id="insertm"  style=" cursor:pointer; font-size:21px; color:green;  border-right:thin solid green; padding:2px;">Insert manually</span> 
- <span id="uploadee" style=" cursor:pointer; font-size:21px; color:green;  ">Upload</span>
- <span id="searched" style="cursor:pointer; font-size:21px; color:green; border-left:thin solid green;  padding:2px;"> Search </span>
+<span id="insertm"  style=" cursor:pointer; font-size:20px; color:green;  border-right:thin solid green; padding:2px;">Insert manually</span> 
+ <span id="uploadee" style=" cursor:pointer; font-size:20px; color:green;  ">Upload</span>
+ <span id="searched" style="cursor:pointer; font-size:20px; color:green; border-left:thin solid green;  padding:2px;"> Search </span>
  <span id="cliente" ><a  href="admin.php" style=" text-decoration:none; color:orange; border-left:thin solid green; padding:2px;"> Client</a> </span>
 
 </div>
@@ -46,7 +46,7 @@ include"../functions/drop.php";
 
 <div id="searchee">
 <fodrm name="search" id="serach">
-<select name="sel" id="sel" onchange="displaye();" >
+<select name="sel" id="sel" onchange="displaye();"  >
 <option style=" display:none;">Age</option>
 
 
