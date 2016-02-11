@@ -8,10 +8,11 @@
 	background-image:url(../pictures/u.jpg);
 	background-repeat:no-repeat;
 	background-position:center ;
-	background-size:  1700px;
+	background-size:  auto;
 	width:1000px;
 	margin:auto;
 	font-size:24px;
+	codlor:#FBB732
 	
 }
 
@@ -43,7 +44,8 @@ top:100px
 	}
 #login input{
 	width:308px;
-	padding:
+	margin-bottom:5px;
+	
 }
 
 #ilogin{

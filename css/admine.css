@@ -1,10 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-#adminsrp{
+body{
+background-image:url(../pictures/u.jpg);
+	background-repeat:no-repeat;
+	background-position:center ;
+	background-size:cover  ;
+	height:;
+	position:relative;
 	
 	}
+
 	
 #searchee select{
 	position:relative;
@@ -71,9 +77,12 @@ border-color:white;
 }
 
 #admin{
-	position:absolute;
-	margin:auto;
-	width:1000px;
+	position: absolute;
+	margin: auto;
+	width: 1000px;
+	left: 7px;
+	top: 9px;
+	background-color:rgba(240,240,240,0.8);
 	}
 #dropp{
 	width:1500px;
@@ -82,7 +91,7 @@ border-color:white;
 	left:0px;
 	
 	z-index:30px;
-	background-color:white;
+background-color:rgba(240,240,240,0.8);
 	margin:auto;
 		border-bottom:thin solid green;
 			height:150px
@@ -92,6 +101,7 @@ border-color:white;
 	width:1500px;
 	position:fixed;
 	top:0px;
+	left:0px;
 	z-index:200px;
 	background-color:white;
 	border-bottom:2px solid #58BF71;
@@ -101,14 +111,14 @@ border-color:white;
 	width:1500px;
 	position:fixed;
 	top:25px;
-	background-color:white;
+	background-color:rgba(240,240,240,0.5);
 	}
 #searchee{
 	width:1500px;
 	position:fixed;
 	top:25px;
 	left:200px;
-	background-color:white;
+	background-color:;
 	}
 
 #search_resulte{
@@ -119,7 +129,8 @@ border-color:white;
 	width:300px;
 	z-index:-2px;
 	dborder:thin solid green;
-	fheight:500px;}
+	fheight:500px;
+	}
 	
 #dropp input{
 	
@@ -213,11 +224,12 @@ border-color:white;
 	z-index:50;
 	}
 #groupf tr td{
-	border:thin solid green;
+	
+	border:thin solid orange;
 	border-radius:3px;
-	margin:px;
-	
-	
+	margin:;
+	background-color:rgba(255,255,255,0.74);
+	color:black;
 	}
 	#groupd tr td{
 	border: 1px solid green;
@@ -237,7 +249,7 @@ border-color:white;
 	
 
 	color:red;
-	background-color: white;
+	background-color:rgba(240,240,240,0);
 	cursor:pointer;
 	
 	}
@@ -267,6 +279,4 @@ border-color:white;
 	color:white;
 	cursor:pointer;
 	}
-	
-
 	

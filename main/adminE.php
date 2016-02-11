@@ -4,8 +4,12 @@ include"../functions/error.php";
 include"../functions/adminf.php";
 
 include"../functions/drop.php";
+include"../functions/section.php";
 
-
+//check for admin id
+$check = mysqli_query($con,"select * from admin_pass where email ='$emailss'");
+$num = mysqli_num_rows($check);
+if ($num >0){}else {header("location: ../index.php");}
 ?>
 <!doctype html>
 <html>
@@ -23,8 +27,8 @@ include"../functions/drop.php";
 </div>
 
 <div id="heade">
-
-<span id="insertm"  style=" cursor:pointer; font-size:20px; color:green;  border-right:thin solid green; padding:2px;">Insert manually</span> 
+<span id="logout"><a  href="../functions/logout.php" >logout</a></span>
+<span id="insertm"  style=" cursor:pointer; font-size:20px; color:green;  border-left:thin solid green; border-right:thin solid green; padding:2px;">Insert manually</span> 
  <span id="uploadee" style=" cursor:pointer; font-size:20px; color:green;  ">Upload</span>
  <span id="searched" style="cursor:pointer; font-size:20px; color:green; border-left:thin solid green;  padding:2px;"> Search </span>
  <span id="cliente" ><a  href="admin.php" style=" text-decoration:none; color:orange; border-left:thin solid green; padding:2px;"> Client</a> </span>

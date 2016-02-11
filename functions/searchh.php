@@ -45,7 +45,7 @@ echo "<br/><br/><br/><table border='1' id='groupp'  style='background-color:;'  
 			 }else echo "<span style='font-size:30px;'>No result found </span>";
 	}else echo " <br/><br/><br/><br/><br/><br/><br/><span style='font-size:25px; color:green;'>You did not select </span> <span style='font-size:40px; color:orange;'>Symptoms and Disorders</span><span style='font-size:25px; color:green;'> section</span>";	
 	}else echo "<br/><br/><br/><br/><br/><br/><br/><span style='font-size:25px; color:green;'> You did not select</span> <span style='font-size:40px; color:orange;'>Stage of Change </span><span style='font-size:25px; color:green;'>section</span>";		
-	}else echo "<br/><br/><br/><br/><br/><br/><br/><span style='font-size:25px; color:green;'> You did not select</span> <span style='font-size:40px; color:orange;'> Age </span><span style='font-size:25px; color:green;'>group!</span>";
+	}else echo "<br/><br/><br/><br/><br/><br/><span style='font-size:25px; color:green;'> You did not select</span> <span style='font-size:40px; color:orange;'> Age </span><span style='font-size:25px; color:green;'>group!</span>";
 
 
 

@@ -1,6 +1,40 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+/*for client profile*/
+
+#sf {
+	
+position:relative;
+  margin:auto; 
+  top:100px; 
+  border-right: double 3px red;
+   width:320px;	
+	}
+#sf input{
+	
+	margin:5px;
+	  width:318px;
+	  font-size:24px;
+	  border:thin solid orange;
+	}
+	
+#to{
+	
+	}
+
+/*for client main*/
+body{
+background-image:url(../pictures/u.jpg);
+	background-repeat:no-repeat;
+	background-position:center ;
+	background-size:auto  ;
+	height:;
+	position:relative;
+	
+		
+	}
 #top{ 
 position:relative;
 
@@ -13,20 +47,20 @@ position:relative;
 
 #logout a{
 	float: left;
-	color: white;
+	color:rgba(215,160,105,1.00);
 	font-size: 26px;
 	text-decoration:none;
-	background-color:#9E882B;
+	background-color:;
 	border-radius:4px;
 	padding: 0 5px 0 5px;
 }
 
 #logout a:hover{
 	float: left;
-	color: white;
+	color: #964F00;
 	font-size: 26px;
 	text-decoration:none;
-	background-color:#964F00;
+	background-color:#;
 	border-radius:4px;
 	padding: 0 5px 0 5px;
 }
@@ -50,8 +84,9 @@ float:left;
 }
 
 #welcome{float:right;
-color:#CD9916;
-font-size:26px;}
+color:green;
+font-size:26px;
+}
 
 /*search area ---------------*/
 #search_body{
@@ -62,6 +97,7 @@ font-size:26px;}
 	margin: auto;
 	height: 50px;
 	border-collapse: collapse;
+
 
 	}
 #search_top{
@@ -117,6 +153,7 @@ font-size:26px;}
 	font-size: 24px;
 	bordser-right: thin solid #99CBAD ;
 	width:1220px;
+	background-color:;
 
 	
 	
@@ -160,7 +197,9 @@ font-size:26px;}
 	margin:auto;
 	width:1220px;
 	dborder:thin solid green;
-	fheight:500px;}
+	fheight:500px;
+		}
+	
 	
 #groupp{
 	position:fixed;
@@ -183,68 +222,21 @@ font-size:26px;}
 	top:70px;
 	position:relative;
 	margin:auto;
-	width:1050px;
+	width:1220px;
 	
 	border-top:thin solid #99CBAD;
 	height:600px;
 	}
-
-#left_admin{ 
-position:relative;
-float:left;
-
-
-border-right:thin solid #99CBAD;
-width:300px;
-}
-
-#left_admin button{
-		color: white;
-		margin:5px;
-	cursor:pointer;
-	
-	border:thin solid white;
-	border-radius:3px;
-	font-size:28px;
-	width:280px;
-	background-color:#39C12E;
-	}
-
-#left_admin button:focus{
-font-size:28px;
-		color: #39C12E;
-	cursor:pointer;
-	border:thin solid #39C12E;
-	background-color:white;
-	}
-
-#left_admin button:hover{
-font-size:28px;
-		color: #39C12E;
-	cursor:pointer;
-	border-left:thin solid #39C12E;
-	border-right:thin solid #39C12E;
-	background-color:white;
+#adminp{
+	width:1220px;
+	padding-bottom:6px;
+	border-bottom:thin solid #99CBAD;
 	}
 
 
-#right_admin{ 
-	margin:5px;
-position:relative;
-float:right;
 
-dborder:thin solid red;
-width:700px;
-}
 
-#right_admin div{
-		
-		margin:5px;
-	
-	
-	dborder:thin solid green;
-	font-size:18px;
-	}
+
 	
 	#clientall {
 	
@@ -266,7 +258,7 @@ margin:1px;
 
 #cliental td{
 	float:left;
-	width:130px;
+	width:430px;
 	font-size:18px;
 	background-color:#D7C7C7;
 	margin:1px;
@@ -351,10 +343,11 @@ margin:1px;
 	
 	}
 #groupf tr td{
-	border:thin solid green;
+	border:thin solid orange;
 	border-radius:3px;
 	margin:;
-	
+	background-color:rgba(255,255,255,0.74);
+	color:black;
 	
 	}
 	

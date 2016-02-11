@@ -23,7 +23,7 @@ if($emailss){
 <title>psych</title>
 <link type="text/css" href="./css/login.css" rel="stylesheet"/>
 </head>
-<center><a href="main/admine.php" style="color:white; font-size:50px;" >preview link to admin...</a></center>
+
 
 <body id="s" >
 <div id="top"></div>
@@ -37,17 +37,19 @@ if($emailss){
 <span  id="" ><div id="signin" style="height:50px;" ></div>
 </span></div>
 <div>
-<span><center>Email</center></span><input data-tooltip="I am a tooltip"  autofocus name ="iemail" id="iemail" type="email"  placeholder="email"  required value=""  ></div>
+<span><br/></span><input   autofocus name ="iemail" id="iemail" type="email"  placeholder="Email/Userid"   title="Email/Userid" value=""  ></div>
 <div>
-<span><center>Password</center></span>
+<span><center></center></span>
 <input name ="ipassword" id="ipassword" type="password" placeholder="password" required ></div>
-<div><span style="float:right; color:#DFDCDC; cursor:pointer;">Forgot You Password</span></div>
+
 
 
 <div><input name ="ilogin" id="ilogin"type="submit" value="Sign In" onclick="signin();"  ></div>
 <span  style=" margin-top:2px; font-size:17px"></span>
 </form>
+<div><span style="float:ridght; color:#DFDCDC; cursor:pointer;"><center>Forgot Your Password</center></span></div>
 <div style="color:white; cursor:pointer;" id="regn"><center>Create an account</center></div>
+<div><span  style=" float:right;">Check here if Admin <input  id="check"  style="font-size:9px; width:35px" type="checkbox" ></span></div>
 </div>
 <p></p>
 

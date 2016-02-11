@@ -3,13 +3,23 @@
 function signin(){
 	var ee = $("#iemail").val();
 	var piy = $("#ipassword").val();
-
-$.post('functions/login.php', {ee:ee,piy:piy},function(data){
+	var c;
+	if($("#check").is(':checked')){
+		 c = "check";
+	}else {
+	  c = "";
+	}
+	
+	
+$.post('functions/login.php', {ee:ee,piy:piy,c:c},function(data){
 	$("#ss").html(data);
 	
 	if(data =="."){
 		window.location = "main/main.php";
-		}
+		}else if(data =="..") {
+			
+			window.location = "main/admine.php";
+			}
 	
 	});
 
