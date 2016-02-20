@@ -25,20 +25,31 @@ if ($num >0){}else {header("location: ../index.php");}
 <body>
 
 <div id="top">
-<span id="logout"><a  href="../functions/logout.php" >logout</a></span>
-<span id="logoudt"><a  href="../main/admine.php" >Admin Section</a></span>
-<span id= "welcome"><?php echo "welcome boss "; ?></span>
+<span id="logout"><a  href="../functions/logout.php"  title="logout"></a></span>
 
+<span id= "welcome"><?php echo "welcome boss "; ?></span>
+<span id="welcome"><span style="color:black;">||</span><a style="color:orange; text-decoration:none;"  href="../main/admine.php" >Admin Section</a></span>
 </div>
 
 
 <div id="admin">
 <div id="adminp">
-<br/>
-Change Password: 
-<input type="text" placeholder="current Password">
-<input type="text" placeholder="New Password">
-<input type="button" value="Done">
+  <p><br/>
+    Change Password: 
+  <input type="text" placeholder="current Password">
+  <input type="text" placeholder="New Password">
+  <input type="button" value="Done">
+  </p>
+  <p>&nbsp;</p>
+  add admins<br/>
+  <input type="text" placeholder="first name"><br/>
+  <input type="text" placeholder="last name"><br/>
+  <input type="text" placeholder="admin id"><br/>
+  <input type="text" placeholder="email"><br/>
+  <input type="text" placeholder=" Password"><br/>
+    <input type="text" placeholder="confirm Password"><br/>
+  <input type="button" value="Add admin">
+  
 </div><br/>
 
 <div id="adminp">
