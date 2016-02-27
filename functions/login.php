@@ -17,7 +17,8 @@ $ipassword = mysqli_real_escape_string($con,nl2br(htmlspecialchars($_POST['piy']
 
 if($iemail){
 	if($ipassword){
-		$query = mysqli_query($con,"SELECT * FROM admin_pass WHERE email = '$iemail'  AND password ='$ipassword'");	
+		$hipass = md5($ipassword);
+		$query = mysqli_query($con,"SELECT * FROM admin_pass WHERE  userid ='$iemail'  AND password ='$hipass'");	
 			$numrows = mysqli_num_rows($query);
 
 if($numrows ==1){
@@ -27,12 +28,15 @@ if($numrows ==1){
 			
 			
 			$dbemail = $row['email'];
-			
-		
+			$dbfirstname = $row['firstname'];
+			$dblastname = $row['lastname'];
+			$dbid = $row['id'];
 			
 			
 			$_SESSION['email']= $dbemail;
-			
+			$_SESSION['lastname']= $dblastname;
+			$_SESSION['firstname']= $dbfirstname;
+			$_SESSION['id']= $dbid;
 			
 			}
 			
@@ -41,7 +45,8 @@ if($numrows ==1){
 }else {
 	
 			$hipass = md5($ipassword);
-			$query = mysqli_query($con,"SELECT * FROM client WHERE (email = '$iemail' OR username ='$iemail') AND password ='$hipass'");
+			$query = mysqli_query($con,"SELECT * FROM client WHERE (email = '$iemail' OR username ='$iemail') AND (password ='$hipass' AND act=1)");
+			
 $numrows = mysqli_num_rows($query);
 
 if($numrows ==1){

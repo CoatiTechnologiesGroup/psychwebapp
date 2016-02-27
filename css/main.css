@@ -254,12 +254,20 @@ color:green;
 margin:1px;
 }
 
-
+#clientalh td{
+	float:left;
+	width:200px;
+	font-size:18px;
+	background-color:rgba(84,84,84,1.00);
+	color:white;
+	margin:1px;
+	
+	}
 #cliental td{
 	float:left;
-	width:430px;
+	width:200px;
 	font-size:18px;
-	background-color:#D7C7C7;
+	background-color:white;
 	margin:1px;
 	
 	}
