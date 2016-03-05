@@ -38,39 +38,57 @@ if ($num >0){}else {header("location: ../index.php");}
 <div id="admin">
 <div id="adminp">
 <br/>
-<div><span style="border:3px solid orange; color:brown; font-size:20px; padding:3px;">Updates</span><span style="border:3px solid orange; color:brown; font-size:20px; padding:3px;"> Add admins </span><span style="border:3px solid orange; color:brown; font-size:20px; padding:3px;"> clients</span></div>
-  <br/><br/><br/>
+<div style="width:900px; float:left;"><span id="upe" style=" cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;">Updates</span><span id="ade" style="cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;"> Add admins </span><span id="ce" style=" cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;"> clients</span><span id="fe"style=" cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;"> Feedback</span></div>
+  <br/><br/><br/><br/><br/>
   <div id="adupdate">
      <span id="add_adminseu" >Updates </span><br/>
-   <input id = "feu" type="text" placeholder="first name"><br/>
-  <input id = "leu"type="text" placeholder="last name"><br/>
-  <input id = "ieu" type="text" placeholder="admin id"><br/>
-  <input id = "eeu" type="text" placeholder="email"><br/>
-  <input id = "peu" type="text" placeholder=" Password"><br/>
-    <input  id = "ceu"type="text" placeholder="confirm Password"><br/>
+   <input id = "feu" type="text" placeholder="first name">
+  <input id = "leu"type="text" placeholder="last name">
+  <input id = "ieu" type="text" placeholder="admin id">
+  <input id = "eeu" type="text" placeholder="email">
+  <input id = "peu" type="text" placeholder=" Password">
+    <input  id = "ceu"type="text" placeholder="confirm Password">
   <input onclick="add_adminu()" id = "be" type="button" value="Update admin">
  </div>
-  <p>&nbsp;</p>
+  
   <div id="newupdate">
   <span id="add_adminse" >add admins</span><br/>
-  <input id = "fe" type="text" placeholder="first name"><br/>
-  <input id = "le"type="text" placeholder="last name"><br/>
-  <input id = "ie" type="text" placeholder="admin id"><br/>
-  <input id = "ee" type="text" placeholder="email"><br/>
-  <input id = "pe" type="text" placeholder=" Password"><br/>
-    <input  id = "ce"type="text" placeholder="confirm Password"><br/>
+  <input id = "fe" type="text" placeholder="first name">
+  <input id = "le"type="text" placeholder="last name">
+  <input id = "ie" type="text" placeholder="admin id">
+  <input id = "ee" type="text" placeholder="email">
+  <input id = "pe" type="text" placeholder=" Password">
+    <input  id = "ce"type="text" placeholder="confirm Password">
   <input onclick="add_admin()" id = "be" type="button" value="Add admin">
+ <br/><br/> <br/>
+  <div><?php include"../functions/admindb.php";?></div>
   </div>
 </div><br/>
 
-<div id="upclient">
+<div id="feedadm">
+<span id="feeds"></span><br/>
+question<br/>
+<textarea id="q"></textarea>
+Answers
+a.<textarea id="a" ></textarea>
+b.<textarea  id="b"></textarea>
+c.<textarea id="c"></textarea>
+d.<textarea id="d"></textarea>
+<input onClick="feed();" type="button" value="Done">
+
 <br/>
+<?php include"../functions/showfeedback.php"; ?>
+</div>
+
+
+<div id="upclient">
+
  
 
-<input type="search" placeholder="Search through for names">
-<input type="button" value="Search"> data result<br/><br/>
-<?php echo  clientAll($con);?>
-</div><br/>
+<input title="searches for first and lastnames" id="cl" type="search" placeholder="Search through for names">
+<input  onClick="searchclient()" type="button" value="Search"> data result<br/><br/>
+<div id="clientsh"><?php echo clientAll($con); ?></div>
+</div>
 
 
 </div>
@@ -82,3 +100,13 @@ if ($num >0){}else {header("location: ../index.php");}
 
 
 <?Php include "../functions/footer.php";?>
+<script type="text/javascript">
+
+
+
+$('#adupdate').hide();
+
+$('#upclient').show();
+$('#feedadm').hide();
+$('#newupdate').hide();
+</script>

@@ -48,6 +48,10 @@ $(document).ready(function(e) {
 		});
 });
 
+function feedad(f){
+	var s = document.getElementsByTagName(f);
+	alert(f);
+	}
 
 ///pop out ----
 
@@ -210,6 +214,22 @@ $("#ii").html(" ");
 });
 }
 
+function searchclient(){
+	
+
+$('#successsh').show();
+
+var cl = $('#cl').val();
+
+
+$.get("../functions/searchclient.php", {cl:cl},function(data){
+	
+	
+
+$('#clientsh').html(data) 	;
+
+});
+}
 //--- disable
 
 //client profile----

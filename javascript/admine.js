@@ -4,6 +4,10 @@ $('#dropp').hide();
 $('#uploade').hide();
 $('#searchee').hide();
 
+
+
+
+
 $('#insertm').click(function (){
 	
 	$('#dropp').show();
@@ -24,6 +28,111 @@ $('#searched').click(function (){
 $('#dropp').hide();
 	});
 
+
+////menu for admin ****
+
+$('#upe').click(function (){
+	
+$('#adupdate').show();
+
+$('#upclient').hide();
+
+$('#newupdate').hide();
+$('#feedadm').hide();
+	});
+	
+
+$('#ade').click(function (){
+	
+$('#adupdate').hide();
+
+$('#upclient').hide();
+$('#feedadm').hide();
+
+$('#newupdate').show();
+	});
+	
+//feedback *****
+
+
+function feed(){
+		var q = $('#q').val();
+		var a = $('#a').val();
+		var b = $('#b').val();
+		var c = $('#c').val();
+		var d = $('#d').val();
+		var e = $('#e').val();
+		
+//alert(q);
+		
+		$.post('../functions/feedback.php', {q:q,a:a,b:b,c:c,d:d,e:e},function(data){
+			
+				
+				$("#feeds").html(data);
+				
+		
+		  
+	});
+}
+
+//feedback show questions on client side
+
+function showclient(u,id){
+		
+		
+//alert(q);
+		
+		$.post('../functions/showclient.php', {u:u,id:id},function(data){
+			
+				
+				//alert(data);
+				
+		
+		  
+	});
+}
+
+
+//feedback show questions on client side delete
+
+function deleps(d){
+		var v = $('#hidden').text();
+		$('.'+d).hide('slow');
+		
+		$.post('../functions/deleteadmine.php', {deletee:d},function(data){
+			
+	
+	s
+	
+	
+			
+				});
+		
+}
+
+
+$('#ce').click(function (){
+	
+$('#adupdate').hide();
+
+$('#upclient').show();
+$('#feedadm').hide();
+
+$('#newupdate').hide();
+	});
+	
+	
+$('#fe').click(function (){
+	$('#adupdate').hide();
+
+$('#upclient').hide();
+$('#feedadm').show();
+
+$('#newupdate').hide();
+
+	});
+	
+	
 
 //load page 1
 function loadp(){ $.get('../functions/pagination.php', {v:1},function(data){
@@ -117,7 +226,7 @@ function add_admin(){
 	});
 }
 
-//radio activate/ deactivate
+//radio activate/ deactivate client
 
 function act(r,id){
 
@@ -131,6 +240,37 @@ if(r==1){
 	$.post('../functions/actordeact.php', {id:id,r:r},function(data){
 			});
 	}
+	
+	
+//check if addmin
+
+function checkaddmin(i,f,l,e,p,ade){
+	//alert(ade);
+	
+	var t = $('#adde'+i).text();
+	
+	
+		if(t=="Admin"){
+	var rr = "Client";
+	}else var rr = "Admin";
+	
+	
+	
+	$('#adde'+i).text(rr);
+	
+		$.post('../functions/checkaddmin.php', {i:i,f:f,l:l,e:e,p:p},function(data){
+			
+				
+				alert(data);
+				
+		
+		  
+	});
+
+	
+	}
+
+
 
 //small serach get
 function searche(id,value){

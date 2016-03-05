@@ -44,7 +44,7 @@ text-decoration:none; margin-left:2px;" href="../functions/logout.php" > logout<
 <span id="success"></span><br/>
 
 <fsorm method="post"  enctype="multipart/form-data">
-<input type="file" name="excel" id="excel"   multiple /><input name='sumb' id="excelb" type="button"   onclick="uploadfile();"value="Insert"/> <span  id="successs">loading...<img   width="15px"  height="15px"src="../pictures/loading.gif"></span>
+<input type="file"  title="Choose an excel file" name="excel" id="excel"    /><input name='sumb' id="excelb" type="button"   onclick="uploadfile();"value="Insert"/> <span  id="successs">loading...<img   width="15px"  height="15px"src="../pictures/loading.gif"></span>
 
 
 </form></div>
@@ -127,7 +127,7 @@ Stage of change</center>
 <textarea onKeyUp="searche('Basis_for_Evidence','#Basis_for_Evidence');" style="height:60px;" type="text" id="Basis_for_Evidence" placeholder="Basis for Evidence" ></textarea>
 
 <span id="adde" onClick="adde();" style="cursor:pointer; font-size:18px;  z-index:100px;color:white; background-color:green; border-radius:4px;  padding:1px; float:right; " >Insert</span><br/>
-<span id="s" style="font-size:15px; float:right; ";><span style="color:white;">1</span></span>
+<span id="s" style="font-size:15px; float:right; ";><span style="color:white;"></span></span>
 </div>
 
 
