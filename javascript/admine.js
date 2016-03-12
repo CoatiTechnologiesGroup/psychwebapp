@@ -36,7 +36,7 @@ $('#upe').click(function (){
 $('#adupdate').show();
 
 $('#upclient').hide();
-
+$('#feedbackanswers').hide();
 $('#newupdate').hide();
 $('#feedadm').hide();
 	});
@@ -45,7 +45,7 @@ $('#feedadm').hide();
 $('#ade').click(function (){
 	
 $('#adupdate').hide();
-
+$('#feedbackanswers').hide();
 $('#upclient').hide();
 $('#feedadm').hide();
 
@@ -102,7 +102,7 @@ function deleps(d){
 		$.post('../functions/deleteadmine.php', {deletee:d},function(data){
 			
 	
-	s
+	
 	
 	
 			
@@ -111,13 +111,33 @@ function deleps(d){
 }
 
 
+//range feedback
+
+function range(id,e){
+	var ac = $('#r'+id).val();
+	var an = $('#cn'+id).val();
+	$('#rg'+id).text(ac);
+	//$('#rg'+id).text(ac+" "+ e +" "+ an);
+	
+	$.post('../functions/feedadmin.php', {id:id,e:e,ac:ac,an:an},function(data){
+			
+	//alert(data);
+	
+	
+	
+			
+				});
+	
+	}
+
+
 $('#ce').click(function (){
 	
 $('#adupdate').hide();
 
 $('#upclient').show();
 $('#feedadm').hide();
-
+$('#feedbackanswers').hide();
 $('#newupdate').hide();
 	});
 	
@@ -127,7 +147,16 @@ $('#fe').click(function (){
 
 $('#upclient').hide();
 $('#feedadm').show();
+$('#feedbackanswers').hide();
+$('#newupdate').hide();
 
+	});
+$('#fea').click(function (){
+	$('#adupdate').hide();
+
+$('#upclient').hide();
+$('#feedadm').hide();
+$('#feedbackanswers').show();
 $('#newupdate').hide();
 
 	});

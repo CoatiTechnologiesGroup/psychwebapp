@@ -68,9 +68,9 @@ dropshow($con,"Symptoms_and_Disorders");
 
 <div style=" width:690px; "><span  style="float:right; border:thin solid red; border-radius:100px; padding:0 3px 0 3px;background-color:red; color:white; cursor:pointer;" id="popx">X</span></div>
 <br/>
-<div style="background-color:red; max-height:400px; width:687px; overflow-x:hidden; border-radius:3px; ">
+<div id='popc' style="background-color:red; max-height:400px; width:687px; overflow-x:hidden; border-radius:3px; ">
 
-<?php include"../functions/showfeedbackclient.php"; ?>
+<?php  include"../functions/showfeedbackclient.php"; ?>
 </div>
 
 </div>

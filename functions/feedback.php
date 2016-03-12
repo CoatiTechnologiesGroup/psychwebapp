@@ -28,8 +28,7 @@ if($numrows==0){
 
 		
 $query = mysqli_query($con,"insert into feedbackq values('id','$q','$unique','0')");
-		$query = mysqli_query($con,"insert into feedbacka values('ida','$unique','$a','$b','$c','$d','$e','0')");
-	 
+		
 	 echo "question was added to database";
 		
 }else echo "already exist";

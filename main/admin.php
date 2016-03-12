@@ -5,6 +5,7 @@ include"../functions/adminf.php";
 
 
 
+
 include"../functions/section.php";
 
 
@@ -38,7 +39,7 @@ if ($num >0){}else {header("location: ../index.php");}
 <div id="admin">
 <div id="adminp">
 <br/>
-<div style="width:900px; float:left;"><span id="upe" style=" cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;">Updates</span><span id="ade" style="cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;"> Add admins </span><span id="ce" style=" cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;"> clients</span><span id="fe"style=" cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;"> Feedback</span></div>
+<div style="width:900px; float:left;"><span id="upe" style=" cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;">Updates</span><span id="ade" style="cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;"> Add admins </span><span id="ce" style=" cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;"> clients</span><span id="fe"style=" cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;"> Feedback</span><span id="fea"style=" cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;"> Feedback Answers</span></div>
   <br/><br/><br/><br/><br/>
   <div id="adupdate">
      <span id="add_adminseu" >Updates </span><br/>
@@ -90,6 +91,9 @@ d.<textarea id="d"></textarea>
 <div id="clientsh"><?php echo clientAll($con); ?></div>
 </div>
 
+<div id="feedbackanswers">
+<?php include"../functions/feedbackanswers.php"; ?>
+</div>
 
 </div>
 
@@ -106,6 +110,7 @@ d.<textarea id="d"></textarea>
 
 $('#adupdate').hide();
 
+$('#feedbackanswers').hide();
 $('#upclient').show();
 $('#feedadm').hide();
 $('#newupdate').hide();

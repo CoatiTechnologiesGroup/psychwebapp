@@ -48,9 +48,17 @@ $(document).ready(function(e) {
 		});
 });
 
+function feedas(d,r){
+	alert(r);
+	
+	}
+
 function feedad(f){
-	var s = document.getElementsByTagName(f);
-	alert(f);
+	alert("Thanks for you feed back :)");
+$('#pop').hide();
+
+var su = "http://localhost/psychApp/functions/showfeedbackclient.php";
+$('#popc').load(su);
 	}
 
 ///pop out ----
@@ -62,7 +70,7 @@ $('#popx').click(function () {
 
 // search button ------
 
-document.getElementById('done_search_s').disabled=true;
+/*document.getElementById('done_search_s').disabled=true;
 document.getElementById('done_search_s').style.backgroundColor='grey';
 document.getElementById('done_search_s').style.color='white';
 document.getElementById('done_search_s').style.cursor='not-allowed';
@@ -80,7 +88,7 @@ document.getElementById('done_search_s').style.cursor='pointer';
 		}else { b.disabled=true;}
 	
 	}
-
+*/
 
 // for id
 function _(id){
