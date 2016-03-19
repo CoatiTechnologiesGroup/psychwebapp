@@ -62,7 +62,8 @@ if ($num >0){}else {header("location: ../index.php");}
     <input  id = "ce"type="text" placeholder="confirm Password">
   <input onclick="add_admin()" id = "be" type="button" value="Add admin">
  <br/><br/> <br/>
-  <div><?php include"../functions/admindb.php";?></div>
+  <div id='sdc'>
+ <?php //include"../functions/admindb.php";?></div>
   </div>
 </div><br/>
 
@@ -70,15 +71,13 @@ if ($num >0){}else {header("location: ../index.php");}
 <span id="feeds"></span><br/>
 question<br/>
 <textarea id="q"></textarea>
-Answers
-a.<textarea id="a" ></textarea>
-b.<textarea  id="b"></textarea>
-c.<textarea id="c"></textarea>
-d.<textarea id="d"></textarea>
+
 <input onClick="feed();" type="button" value="Done">
 
 <br/>
-<?php include"../functions/showfeedback.php"; ?>
+<div id="feedid" >
+
+</div>
 </div>
 
 

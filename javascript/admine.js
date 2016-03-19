@@ -4,9 +4,9 @@ $('#dropp').hide();
 $('#uploade').hide();
 $('#searchee').hide();
 
+$("#feedid").load("../functions/showfeedback.php");
 
-
-
+$("#sdc").load("../functions/admindb.php");
 
 $('#insertm').click(function (){
 	
@@ -57,19 +57,15 @@ $('#newupdate').show();
 
 function feed(){
 		var q = $('#q').val();
-		var a = $('#a').val();
-		var b = $('#b').val();
-		var c = $('#c').val();
-		var d = $('#d').val();
-		var e = $('#e').val();
+		
 		
 //alert(q);
 		
-		$.post('../functions/feedback.php', {q:q,a:a,b:b,c:c,d:d,e:e},function(data){
+		$.post('../functions/feedback.php', {q:q},function(data){
 			
 				
 				$("#feeds").html(data);
-				
+				$("#feedid").load("../functions/showfeedback.php");
 		
 		  
 	});
@@ -249,6 +245,7 @@ function add_admin(){
 			
 				
 				$("#add_adminse").html(data);
+				$("#sdc").load("../functions/admindb.php");
 				
 		
 		  
