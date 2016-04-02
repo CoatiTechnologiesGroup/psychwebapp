@@ -109,11 +109,18 @@ function deleps(d){
 
 //range feedback
 
-function range(id,e){
-	var ac = $('#r'+id).val();
-	var an = $('#cn'+id).val();
-	$('#rg'+id).text(ac);
-	//$('#rg'+id).text(ac+" "+ e +" "+ an);
+function range(id,e,identity){
+	$('#'+id).hide("");
+	var cn = document.getElementsByName(identity);
+for (var i = 0, length = cn.length; i < length; i++) {
+    if (cn[i].checked) {
+       var ac=(cn[i].value);
+
+var an = $('#cn'+id).val();
+	
+	
+
+	
 	
 	$.post('../functions/feedadmin.php', {id:id,e:e,ac:ac,an:an},function(data){
 			
@@ -123,6 +130,11 @@ function range(id,e){
 	
 			
 				});
+        break;
+    }
+}
+	
+	
 	
 	}
 

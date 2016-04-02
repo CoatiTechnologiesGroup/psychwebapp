@@ -19,6 +19,7 @@ while($row=mysqli_fetch_array($query)){
 	
 	$n = $row['emailu'];
 	$q= $row['q'];
+	$qid= $row['qid'];
 	$r= $row['r'];
 	$c= $row['comment'];
 	
@@ -33,28 +34,30 @@ while($row=mysqli_fetch_array($query)){
 	$rowc=mysqli_fetch_array($queryc);
 	$fc= $rowc['firstname'];
 	$lc= $rowc['lastname'];
-		echo " <tr><td style=\" border:thin solid black; background-color:white; color:black; \" ><textarea style='width:154px;  resize:none;' disabled  >$qq</textarea></td><td style=\" border:thin solid black; background-color:white; color:black;\" >$r</td></tr>";
+	
+	
+	$queryk = mysqli_query($con,"SELECT * FROM feedbacka where qid='$q' ");
+		$rowk=mysqli_fetch_array($queryk);
+			$ac= $rowk['comment'];
+			
+	$count =$queryk->num_rows;
+	
+	
+	
+	$t =round(($r)/($count));
+	
+	
+	
+		echo " <tr><td style=\" border:thin solid black; background-color:white; color:black; \" ><textarea style='width:154px;  resize:none;' disabled  >$qq</textarea></td><td style=\" border:thin solid black; background-color:white; color:black;\" >$t</td><td style=\" border:thin solid black; background-color:white; color:black;\" ><a href=''>link to question $q</a></td></tr>";
 		
 		
 
 		
-	if($q==9){
-		$a+=$r;
-	$qq;
-	echo "<script type=\"text/javascript\">
 	
-	var y = document.getElementById('qid').value;
-	
-	if($q == y){
-	alert($a);
-	}
-	</script>";
-		
-	 }	
 		
 	
 }
-	 echo  $a;
+
 	echo "</table>";
 	
 	

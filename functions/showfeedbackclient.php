@@ -22,12 +22,47 @@ while(($row=mysqli_fetch_array($query))){
 	$id=$row['id'];
 	
 	
-echo " $cc . $q <br/>0<input   id =\"r$id\" onChange=\"range('$id','$emailss')\" type=\"range\"  step=\"1\" max=\"5\" min=\"0\" value=\"0\">5 ==><span id=\"rg$id\" >0</span></br/></br/>Comment</br/> <textarea  onkeyup=\"range('$id','$emailss')\" id='cn$id' style=' padding:0 5px 0 5px; '></textarea>  </span> <span  id='sc' ></span><hr></hr> <br/><br/>
+echo "<div id = '$id'> $cc . $q <br/>
+<table ><tr><th>Excelent</th>
+<th></th>
+<th>Neutral</th>
+<th></th>
+<th>poor</th>
+<th></th>
+<th>N/A</th>
+</tr>
 
+<tr><td><input type='radio'  name=\"r$id\"  id=\"r$id\" value=\"5\"></td>
+<td><input type='radio'  name=\"r$id\"  id=\"r$id\" value=\"4\"></td>
+<td><input type='radio'  name=\"r$id\" id=\"r$id\" value=\"3\"></td>
+<td><input type='radio'  name=\"r$id\" id=\"r$id\" value=\"2\"></td>
+<td>
+<input type='radio'  name=\"r$id\"  id=\"r$id\" value=\"1\"></td>
+<td></td>
+<td>
+<input type='radio'  name=\"r$id\"  id=\"r$id\" value=\"0\"></td>
+
+</tr>
+
+
+
+
+
+
+</table>
+<br/>
+Comment</br/> 
+
+
+<textarea  id='cn$id' style=' padding:0 5px 0 5px; '></textarea>  </span> <span  id='sc' ></span><br/>
+
+<input type='button' onclick=\"range('$id','$emailss','r$id')\"  name='rr' value='submit'><br/>
+<hr></hr> <br/><br/>
+</div>
 
 ";
 }
-echo "<input onClick=\"feedad('$emailss')\"  type=\"button\" value=\"Submit\">";
+echo "<input onClick=\"feedad('$emailss')\"  type=\"button\" value=\"Close\">";
 }else {
 	
 	echo "like us on facebook";
