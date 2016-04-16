@@ -23,24 +23,24 @@ while(($row=mysqli_fetch_array($query))){
 	
 	
 echo "<div id = '$id'> $cc . $q <br/>
-<table ><tr><th>Excelent</th>
+<table ><tr><th width='50px'><center>Excelent</center></th>
 <th></th>
-<th>Neutral</th>
-<th></th>
-<th>poor</th>
-<th></th>
-<th>N/A</th>
+<th width='50px'><center>Neutral</center></th>
+<th width='50px'></th>
+<th width='50px'><center>poor</center></th>
+<th width='50px'></th>
+<th width='50px' ><center>N/A</center></th>
 </tr>
 
-<tr><td><input type='radio'  name=\"r$id\"  id=\"r$id\" value=\"5\"></td>
-<td><input type='radio'  name=\"r$id\"  id=\"r$id\" value=\"4\"></td>
-<td><input type='radio'  name=\"r$id\" id=\"r$id\" value=\"3\"></td>
-<td><input type='radio'  name=\"r$id\" id=\"r$id\" value=\"2\"></td>
-<td>
-<input type='radio'  name=\"r$id\"  id=\"r$id\" value=\"1\"></td>
+<tr><td width='50px'><center><input type='radio'  name=\"r$id\"  id=\"r$id\" value=\"5\"></center></td>
+<td width='50px'><center><input type='radio'  name=\"r$id\"  id=\"r$id\" value=\"4\"></center></td>
+<td width='50px'><center><input type='radio'  name=\"r$id\" id=\"r$id\" value=\"3\"></center></td>
+<td width='50px'><center><input type='radio'  name=\"r$id\" id=\"r$id\" value=\"2\"></center></td>
+<td width='50px'><center>
+<input type='radio'  name=\"r$id\"  id=\"r$id\" value=\"1\"></td></center>
 <td></td>
-<td>
-<input type='radio'  name=\"r$id\"  id=\"r$id\" value=\"0\"></td>
+<td width='50px'><center>
+<input type='radio'  name=\"r$id\"  id=\"r$id\" value=\"0\"></td></center>
 
 </tr>
 

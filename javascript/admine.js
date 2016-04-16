@@ -39,19 +39,57 @@ $('#upclient').hide();
 $('#feedbackanswers').hide();
 $('#newupdate').hide();
 $('#feedadm').hide();
+$('#deletedate').hide();
 	});
 	
+$('#deleteacc').click(function (){
+	
+$('#deletedate').show();
+$('#adupdate').hide();
+$('#upclient').hide();
+$('#feedbackanswers').hide();
+$('#newupdate').hide();
+$('#feedadm').hide();
+	});	
 
 $('#ade').click(function (){
-	
+	$('#deletedate').hide();
 $('#adupdate').hide();
 $('#feedbackanswers').hide();
 $('#upclient').hide();
 $('#feedadm').hide();
 
 $('#newupdate').show();
+var su = "http://localhost/psychApp/functions/admindb.php";
+$('#newupdate').load(su);
+
 	});
 	
+	
+function admindelete(a){
+	
+	
+	var p = prompt("Please input your current password", "");
+    
+    
+
+	$.post("../functions/admindelete.php", {a:a,p:p},function(data){
+		
+		
+		
+	
+		
+	if(data == "invalid input"){
+		alert(data);
+		}else if(data == "account deleted"){
+		window.location="../functions/logout.php";
+		alert(data);
+		}
+	
+	});
+}	
+
+
 //feedback *****
 
 
@@ -111,7 +149,7 @@ function deleps(d){
 
 function range(id,e,identity){
 	$('#'+id).hide("");
-	var cn = document.getElementsByName(identity);
+var cn = document.getElementsByName(identity);
 for (var i = 0, length = cn.length; i < length; i++) {
     if (cn[i].checked) {
        var ac=(cn[i].value);
@@ -147,6 +185,7 @@ $('#upclient').show();
 $('#feedadm').hide();
 $('#feedbackanswers').hide();
 $('#newupdate').hide();
+$('#deletedate').hide();
 	});
 	
 	
@@ -157,6 +196,7 @@ $('#upclient').hide();
 $('#feedadm').show();
 $('#feedbackanswers').hide();
 $('#newupdate').hide();
+$('#deletedate').hide();
 
 	});
 $('#fea').click(function (){
@@ -165,8 +205,9 @@ $('#fea').click(function (){
 $('#upclient').hide();
 $('#feedadm').hide();
 $('#feedbackanswers').show();
-$('#newupdate').hide();
 
+$('#newupdate').hide();
+$('#deletedate').hide();
 	});
 	
 	
@@ -281,7 +322,6 @@ if(r==1){
 	
 	
 //check if addmin
-
 function checkaddmin(i,f,l,e,p,ade){
 	//alert(ade);
 	

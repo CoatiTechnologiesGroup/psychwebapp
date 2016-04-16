@@ -41,6 +41,9 @@ if ($num >0){}else {header("location: ../index.php");}
 <br/>
 <div style="width:900px; float:left;"><span id="upe" style=" cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;">Updates</span><span id="ade" style="cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;"> Add admins </span><span id="ce" style=" cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;"> clients</span><span id="fe"style=" cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;"> Feedback</span><span id="fea"style=" cursor:pointer;border:3px solid orange; color:brown; font-size:20px; padding:3px;"> Feedback Answers</span></div>
   <br/><br/><br/><br/><br/>
+  <div id="deletedate">
+  deleting
+  </div>
   <div id="adupdate">
      <span id="add_adminseu" >Updates </span><br/>
    <input id = "feu" type="text" placeholder="first name">
@@ -53,15 +56,7 @@ if ($num >0){}else {header("location: ../index.php");}
  </div>
   
   <div id="newupdate">
-  <span id="add_adminse" >add admins</span><br/>
-  <input id = "fe" type="text" placeholder="first name">
-  <input id = "le"type="text" placeholder="last name">
-  <input id = "ie" type="text" placeholder="admin id">
-  <input id = "ee" type="text" placeholder="email">
-  <input id = "pe" type="text" placeholder=" Password">
-    <input  id = "ce"type="text" placeholder="confirm Password">
-  <input onclick="add_admin()" id = "be" type="button" value="Add admin">
- <br/><br/> <br/>
+ 
   <div id='sdc'>
  <?php //include"../functions/admindb.php";?></div>
   </div>
@@ -108,7 +103,7 @@ question<br/>
 
 
 $('#adupdate').hide();
-
+$('#deletedate').hide();
 $('#feedbackanswers').hide();
 $('#upclient').show();
 $('#feedadm').hide();

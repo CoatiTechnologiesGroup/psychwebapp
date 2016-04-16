@@ -267,3 +267,20 @@ $('#welcome').html("Welcome " + f + " "+ l);
 }
 	});
 }
+
+
+//deleting user account
+
+function profiledelete(d){
+	
+	var p = $('#currentpass').val();
+	$.post("../functions/deleteuser.php", {d:d,p:p},function(data){
+	
+		$('#p').html(data)
+	if(data =="5"){
+			alert("You have been removed from the database.");
+		window.location="../functions/logout.php";	
+	}
+	
+	});
+}

@@ -48,7 +48,8 @@ while($row=mysqli_fetch_array($query)){
 	
 	
 	
-		echo " <tr><td style=\" border:thin solid black; background-color:white; color:black; \" ><textarea style='width:154px;  resize:none;' disabled  >$qq</textarea></td><td style=\" border:thin solid black; background-color:white; color:black;\" >$t</td><td style=\" border:thin solid black; background-color:white; color:black;\" ><a href=''>link to question $q</a></td></tr>";
+		echo " <tr><td style=\" border:thin solid black; background-color:white; color:black; \" ><textarea style='width:154px;  resize:none;' disabled  >$qq</textarea></td><td style=\" border:thin solid black; background-color:white; color:black;\" >$t</td><td style=\" border:thin solid black; background-color:white; color:black;\" >
+<span onclick=\"closedd('t.php?g=$q');\" style=\"cursor:pointer;\">link to question answers</span></td></tr>";
 		
 		
 
@@ -63,3 +64,13 @@ while($row=mysqli_fetch_array($query)){
 	
 
 ?>
+<script type="text/javascript">
+function closedd (target){
+	
+	popwin = window.open(target,"windowName","width=550,height=850,status=yes");
+	popwin.moveTo(1,1);
+	
+	//window.open('t.php');
+	//alert('hat');
+}
+</script>
