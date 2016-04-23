@@ -44,7 +44,8 @@ text-decoration:none; margin-left:2px;" href="../functions/logout.php" > logout<
 <span id="success"></span><br/>
 
 <fsorm method="post"  enctype="multipart/form-data">
-<input type="file"  title="Choose an excel file" name="excel" id="excel"    /><input name='sumb' id="excelb" type="button"   onclick="uploadfile();"value="Insert"/> <span  id="successs">loading...<img   width="15px"  height="15px"src="../pictures/loading.gif"></span>
+<input type="file"  title="Choose an excel file" name="excel" id="excel"    /><input name='sumb' id="excelb" type="button"   onclick="uploadfile();"value="Insert"/><span><i style="color:orange; cursor:pointer;"
+ onclick="closedd('h.php');"> ? </i></span> <span  id="successs">loading...<img   width="15px"  height="15px"src="../pictures/loading.gif"></span>
 
 
 </form></div>
@@ -180,4 +181,15 @@ Stage of change</center>
 </center>
 
 
+
 <?Php include "../functions/footer.php";?>
+<script type="text/javascript">
+function closedd (target){
+	
+	popwin = window.open(target,"windowName","width=350,height=350,status=yes");
+	popwin.moveTo(50,50);
+	
+	//window.open('t.php');
+	//alert('hat');
+}
+</script>

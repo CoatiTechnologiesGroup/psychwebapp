@@ -63,15 +63,16 @@ if ($num >0){}else {header("location: ../index.php");}
 </div><br/>
 
 <div id="feedadm">
-<span id="feeds"></span><br/>
-question<br/>
-<textarea id="q"></textarea>
+<p><span id="feeds"></span><br/>
+  question</p>
+<p><br/>
+  <textarea id="q"></textarea>
+  <input  "onClick="feed();" type="button" value="Add">
+</p>
 
-<input onClick="feed();" type="button" value="Done">
 
-<br/>
 <div id="feedid" >
-
+  
 </div>
 </div>
 
