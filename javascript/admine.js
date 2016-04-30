@@ -1,4 +1,7 @@
 
+//all help
+
+
 
 $('#dropp').hide();
 $('#uploade').hide();

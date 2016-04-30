@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Upload Help</title>
+
 </head>
 <body>
 <p>This upload engine accepts only excel files with the extension xlsx. </p>

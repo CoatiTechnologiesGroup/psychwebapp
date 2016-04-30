@@ -1,5 +1,23 @@
 
+$("#hii").click(function() {
+	
+	$("#hi").show();
+	});
+	
+	$("#hss").click(function() {
+	
+	$("#hs").show();
+	});
+	
+	$("#hssi").click(function() {
+	
+	$("#hsss").show();
+	});
 
+$("#hx").click(function() {
+	
+	$("#hii").hide();
+	});
 
 //for tooltip
 
