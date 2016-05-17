@@ -18,6 +18,7 @@ $("#hx").click(function() {
 	
 	$("#hii").hide();
 	});
+	
 
 //for tooltip
 

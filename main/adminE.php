@@ -182,6 +182,7 @@ Stage of change</center>
 <div  id ="adminsrp"></div>
 </center>
 
+</div>
 
 
 <?Php include "../functions/footer.php";?>
@@ -191,6 +192,8 @@ insert into database below <br/>
 <div style=" cursor:pointer;border:thin solid red; " hi="hx" onClick="hxx('hi');" ><center>close</center></div>
 </div>
 
+
+</div>
 <div id="hs" style=" border:thin solid rgba(0,0,0,1.00);  position: fixed; top:150px; right:540px; width:500px; background-color:white;">
 This upload engine accepts only excel files with the extension xlsx. 
 When uploading make sure you have 7 columns on your excel sheet, ie. age, stage of change , symptoms and disorders, psychological treatment, evidence level and basis for evidence.
@@ -201,8 +204,6 @@ You don't have to give titles such as age for the first column or symptoms and d
 <div id="hsss" style=" border:thin solid rgba(0,0,0,1.00);  position: fixed; top:150px; right:540px; background-color:white;">
 Search through the database below. You can also edit and delete a row or column <br/>
 <div style=" cursor:pointer;border:thin solid red; " hi="hx" onClick="hxx('hsss');" ><center>close</center></div>
-</div>
-
 <script type="text/javascript">
 /*function closedd (target){
 	var window_dimensions = "toolbars=no,menubar=no,location=no,scrollbars=yes,resizable=yes,status=yes"
