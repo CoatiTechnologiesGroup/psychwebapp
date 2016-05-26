@@ -26,6 +26,7 @@ if($emailss){
 
 
 <body id="s" >
+<center>choose language : english||spanish</center>
 <div id="top"></div>
 
 
