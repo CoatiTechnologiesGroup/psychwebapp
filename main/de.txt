@@ -16,6 +16,41 @@ password=contrasena
 confirm password=Confirmar contrasena
 Reset=Reiniciar
 Done=hecho
-input firstname=tttrt
-input lastname=
-input email=
+input firstname=datos de entrada
+Password do not match=La contrasena no coincide
+Password is too short=La contrasena es demasiado corta
+Input password=Contrasena de entrada
+Email format not valid=formato de correo electronico no es valida
+input email=correo electronico de entrada
+input lastname=apellido de entrada
+input firstname=Nombre de entrada
+Age=anos 
+Stage of Change=Etapa de Cambio
+Symptoms and Disorders=Los sintomas y el trastorno
+Welcome=Bienvenido 
+Search=Buscar
+Main=Principal
+Updates=actualizaciones
+Check here for new password=
+Pincha aquí para ver la nueva contrasena
+Update= Actualizar
+Delete Account=Borrar cuenta
+Current Password=contrasena actual
+New Password=nueva passowrd
+First Name=Nombre de pila
+Last Name=Apellido
+User Id=Identidad de usuario
+FirstName can't be empty=Primer nombre no puede estar vacio
+LastName can't be empty=Apellido no puede estar vacia
+UserName can't be empty=Nombre de usuario no puede estar vacía
+Please give a current password in oder to update=Por favor, dar una contrasena actual en oder para actualizar
+I think your password has more characters=Creo que la contraseña tiene mas caracteres
+Current password does not exist=La contrasena actual no existe
+Update was succeful=Actualizacion se ha realizado succeful
+Input current password in order to delete account=contrasena actual de entrada con el fin de eliminar la cuenta
+New Password can't be empty=Nueva contrasena no puede estar vacia
+Update was succeful including your new password=Actualizacion se ha realizado succeful incluyendo su nueva contrasena
+Check here for new password=Pincha aqui para ver la nueva contrasena
+
+
+

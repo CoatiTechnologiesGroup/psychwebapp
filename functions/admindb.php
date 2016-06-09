@@ -31,10 +31,16 @@ while($row=mysqli_fetch_array($query)){
 	$a= $row['act'];
 	$pp= $row['password'];
 	
-	if($email==$emailad){
+	if(($email==$emailad)){
 		$uid = $uid;
-		$dd="<td title='$email' onclick=\"admindelete('$email')\" id='$email' style=\" cursor:pointer; border:thin solid black; background-color:white; color:black;\" >delete </td>";
-		}else {$uid='***';
+			$dd="<td title='$email' onclick=\"admindelete('$email')\" id='$email' style=\" cursor:pointer; border:thin solid black; background-color:white; color:black;\" >delete </td>";
+		if(($email=="admin@boss.com")){
+			
+			$dd="";
+			}
+	
+		}else {
+		$uid='***';
 		$dd="";}
 	
 		echo " <tr><td style=\" border:thin solid black; background-color:white; color:black; \" >$id</td> <td style=\" border:thin solid black; background-color:white; color:black;\" >$f</td><td style=\" border:thin solid black; background-color:white; color:black;\" >$last</td><td title='$email'style=\"border:thin solid black;  background-color:white; color:black;\" >$email</td><td title='$uid' style=\" border:thin solid black; background-color:white; color:black;\" >$uid </td>

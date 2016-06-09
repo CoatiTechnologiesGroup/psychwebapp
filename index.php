@@ -16,6 +16,7 @@ $_SESSION['de']=$ll;
 	$translate = new Translator($_GET['lang']);
 }
 else{
+	session_destroy();
 	$translate = new Translator('en');
 }
  ?>
