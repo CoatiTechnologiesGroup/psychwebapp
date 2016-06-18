@@ -31,7 +31,7 @@ if ($num >0){}else {header("location: ../index.php");}
 <link type="text/css" href="../css/admine.css" rel="stylesheet"/>
 </head>
 
-<body  onload="loadp();">
+<body  onload="loadp('<?php echo $llk; ?>');">
 <div id="search_resulte">
 
 </div>
@@ -56,8 +56,8 @@ text-decoration:none; margin-left:2px;" href="../functions/logout.php" > <?php $
 <span id="success"></span><br/>
 
 <fsorm method="post"  enctype="multipart/form-data">
-<input type="file"  title="Choose an excel file" name="excel" id="excel"    /><input name='sumb' id="excelb" type="button"   onclick="uploadfile();"value="Insert"/><span><i id="hss" style="color:black; cursor:pointer; font-size:30px;"
- onclick="closedd('h.php');"> ? </i></span> <span  id="successs">loading...<img   width="15px"  height="15px"src="../pictures/loading.gif"></span>
+<input type="file"  title="Choose an excel file" name="excel" id="excel"    /><input name='sumb' id="excelb" type="button"   onclick="uploadfile();"value="<?php $translate->__('Insert'); ?>"/><span><i id="hss" style="color:black; cursor:pointer; font-size:30px;"
+ onclick="closedd('h.php');"> ? </i></span> <span  id="successs"><?php $translate->__('loading...'); ?><img   width="15px"  height="15px"src="../pictures/loading.gif"></span>
 
 
 </form></div>
@@ -65,7 +65,7 @@ text-decoration:none; margin-left:2px;" href="../functions/logout.php" > <?php $
 <div id="searchee">
 <fodrm name="search" id="serach">
 <select name="sel" id="sel" onchange="displaye();"  >
-<option style=" display:none;">Age</option>
+<option style=" display:none;"><?php $translate->__('Age'); ?></option>
 
 
 <?php 
@@ -76,21 +76,21 @@ dropshow($con,"Age");
 </select>
 <select  name="sel2" id="sel2" onchange="displaye();">
 
-<option style="display:none;">Stage of Change</option>
+<option style="display:none;"><?php $translate->__('Stage of Change'); ?></option>
 <?php 
 dropshow($con,"Stage_of_Change");
 
 ?>
 </select>
 <select name="sel3" id="sel3" onchange="displaye();">
-<option style="display:none;">Symptoms and Disorders</option>
+<option style="display:none;"><?php $translate->__('Symptoms and Disorders'); ?></option>
 <?php 
 dropshow($con,"Symptoms_and_Disorders");
 
 ?>
 
 </select>
-<input style="font-size:20px;" id="done_search_s" type="button" onclick="searchhe();"  value="search"/>
+<input style="font-size:20px;" id="done_search_s" type="button" onclick="searchhe();"  value="<?php $translate->__('Search'); ?>"/>
 <span id="hssi"  style=" font-size:24px; cursor:pointer;" title="insert to database below">?</span></fordm>
 
 </div>
@@ -101,30 +101,30 @@ dropshow($con,"Symptoms_and_Disorders");
 
 <br/>
 <div>
-<center>Age</center>
+<center><?php $translate->__('Age'); ?></center>
 
-<input  type="text" id="Age"  placeholder="Age" onKeyUp="searche('Age','#Age');"><br/>
+<input  type="text" id="Age"  placeholder="<?php $translate->__('Age'); ?>" onKeyUp="searche('Age','#Age');"><br/>
 
 <div   id="Ages" style="background-color:green; border-radius:0 0 5px 5px; color:white;  z-index:27; overflow:scroll; width:; min-height:0px; max-height:400px;"></div>
 
 </div>
 
-<div id=""><center>
-Stage of change</center>
-<input onKeyUp="searche('Stage_of_Change','#Stage_of_Change');" type="text" id="Stage_of_Change"  placeholder="stage of change">
+<div id=""><center><?php $translate->__('Stage of Change'); ?>
+</center>
+<input onKeyUp="searche('Stage_of_Change','#Stage_of_Change');" type="text" id="Stage_of_Change"  placeholder="<?php $translate->__('Stage of Change'); ?>">
 <div   id="Stage_of_Changes" style="background-color:green; border-radius:0 0 5px 5px; color:white; cursor:; z-index:27; overflow:scroll; width:; min-height:0px; max-height:400px;"></div>
 </div>
 
 
-<div id="" ><center>Symptoms and Disorders</center>
-<input onKeyUp="searche('Symptoms_and_Disorders','#Symptoms_and_Disorders');" type="text" id="Symptoms_and_Disorders"  placeholder="Symptoms and Disorders">
+<div id="" ><center><?php $translate->__('Symptoms and Disorders'); ?></center>
+<input onKeyUp="searche('Symptoms_and_Disorders','#Symptoms_and_Disorders');" type="text" id="Symptoms_and_Disorders"  placeholder="<?php $translate->__('Symptoms and Disorders'); ?>">
 <div   id="Symptoms_and_Disorderss" style="background-color:green; border-radius:0 0 5px 5px; color:white; cursor:; z-index:27; overflow:scroll; width:; min-height:0px; max-height:400px;"></div>
 </div>
 
 
 
-<div id=""><center>Psychological Treatment</center>
-<input onKeyUp="searche('Psychological_Treatment','#Psychological_Treatment');" type="text" id="Psychological_Treatment"  placeholder="Psychological Treatment">
+<div id=""><center><?php $translate->__('Psychological Treatment'); ?></center>
+<input onKeyUp="searche('Psychological_Treatment','#Psychological_Treatment');" type="text" id="Psychological_Treatment"  placeholder="<?php $translate->__('Psychological Treatment'); ?>">
 
 <div   id="Psychological_Treatments" style="background-color:green; border-radius:0 0 5px 5px; color:white; cursor:; z-index:27; overflow:scroll; width:px; min-height:0px; max-height:400px;"></div>
 </div>
@@ -133,15 +133,15 @@ Stage of change</center>
 
 
 
-<div id=""><center>Evidence Level</center>
-<input onKeyUp="searche('Evidence_Level','#Evidence_Level');"  type="text" id="Evidence_Level" placeholder="Evidence Level" >
+<div id=""><center><?php $translate->__('Evidence Level'); ?></center>
+<input onKeyUp="searche('Evidence_Level','#Evidence_Level');"  type="text" id="Evidence_Level" placeholder="<?php $translate->__('Evidence Level'); ?>" >
 <div   id="Evidence_Levels" style="background-color:green; border-radius:0 0 5px 5px; color:white; cursor:; z-index:27; overflow:scroll; width:; min-height:0px; max-height:400px;"></div>
 </div>
 
-<div id=""><center>Basis for Evidence</center>
-<textarea onKeyUp="searche('Basis_for_Evidence','#Basis_for_Evidence');" style="height:60px;" type="text" id="Basis_for_Evidence" placeholder="Basis for Evidence" ></textarea>
+<div id=""><center><?php $translate->__('Basis for Evidence'); ?></center>
+<textarea onKeyUp="searche('Basis_for_Evidence','#Basis_for_Evidence');" style="height:60px;" type="text" id="Basis_for_Evidence" placeholder="<?php $translate->__('Basis for Evidence'); ?>" ></textarea>
 
-<span  id ="hii" style="float:right; font-size:24px; cursor:pointer; " title="insert to database below">?</span><span id="adde" onClick="adde();" style="cursor:pointer; font-size:18px;  z-index:100px;color:white; background-color:green; border-radius:4px;  padding:1px; float:right; " >Insert</span><br/>
+<span  id ="hii" style="float:right; font-size:24px; cursor:pointer; " title="insert to database below">?</span><span id="adde" onClick="adde();" style="cursor:pointer; font-size:18px;  z-index:100px;color:white; background-color:green; border-radius:4px;  padding:1px; float:right; " ><?php $translate->__('Insert'); ?></span><br/>
 <span id="s" style="font-size:15px; float:right; ";><span style="color:white;"></span></span>
 </div>
 
@@ -180,8 +180,8 @@ Stage of change</center>
 
 </span>
 <span id='left_p'>
-<span id="x">hide</span>
-<span id="xs">Page No.</span>
+<span id="x"><?php $translate->__('hide'); ?></span>
+<span id="xs"><?php $translate->__('Page No.'); ?></span>
 <span id="page2">
 
 
@@ -236,5 +236,62 @@ function hxx(g){
 	document.getElementById(g).style.display = "none";
 	
 	}
+
+$("#ii").html(" "+"<span style='color:red;'><?php $translate->__('Page'); ?> "+1+"</span>");
+
+function adde(){
+		var age = $('#Age').val();
+		var stage = $('#Stage_of_Change').val();
+		var symptoms = $('#Symptoms_and_Disorders').val();
+		var psychological = $('#Psychological_Treatment').val();
+		var evidence = $('#Evidence_Level').val();
+		var basis = $('#Basis_for_Evidence').val();
+		
+//alert(age);
+		
+		$.post('../functions/insertshow.php', {age:age,stage:stage,symptoms:symptoms,psychological:psychological,evidence:evidence,basis:basis},function(data){
+			
+				
+				$("#s").html(data);
+				$("#s").show();
+			//clear
+			/*$('#age').val("");
+		 $('#stage').val("");
+		$('#symptoms').val("");
+		 $('#psychological').val("");
+		  $('#evidence').val("");
+		  */
+		 $('#Basis_for_Evidence').val("");
+		 		//hide
+		$('#ages').hide();
+		 $('#stages').hide();
+		$('#symptomss').hide();
+		 $('#psychologicals').hide();
+		  $('#evidences').hide();
+		 $('#basiss').hide();
+		 
+		 $("#ii").html(" "+"<span style='color:red;'><?php $translate->__('Page'); ?> "+1+"</span>");
+		 $("#adminsrp").show();
+		
+		  
+		  $('#hidden').text(1);
+		  
+		  
+		  $.get('../functions/pagination.php', {v:1},function(data){
+	$("#adminsrp").html( data);
+
+$('#search_resulte').hide();
+
+$('#left_p').show();
+$('#page').show();
+$('#prev').show();
+$('#nextt').show();
+$("#adminsrp").show();
+$("#search_resulte").hide();
+
+			});
+		  
+	});
+}
 
 </script>

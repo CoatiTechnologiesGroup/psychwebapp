@@ -8,6 +8,7 @@ Logout=Cerrar sesion
 Insert manually=insertar manualmente
 Search=buscar
 Upload=subir
+Client/Admin=Cliente/Administrador
 Email/Userid=Email/ID de usuario
 firstname=nombre de pila
 lastname=apellido
@@ -27,6 +28,9 @@ input firstname=Nombre de entrada
 Age=anos 
 Stage of Change=Etapa de Cambio
 Symptoms and Disorders=Los sintomas y el trastorno
+Psychological Treatment=El tratamiento psicologico
+Evidence Level=Nivel de evidencia
+Basis for Evidence=Fundamentos de las pruebas
 Welcome=Bienvenido 
 Search=Buscar
 Main=Principal
@@ -50,7 +54,22 @@ Update was succeful=Actualizacion se ha realizado succeful
 Input current password in order to delete account=contrasena actual de entrada con el fin de eliminar la cuenta
 New Password can't be empty=Nueva contrasena no puede estar vacia
 Update was succeful including your new password=Actualizacion se ha realizado succeful incluyendo su nueva contrasena
+Page=pagina
+Admin Section=
+Updates=actualizaciones
+Add admins=Anadir los administradores
+clients=cliente
+Feedback=retroalimentacion
+Feedback Answers=Las respuestas de retroalimentacion
 
+Welcome=Bienvenido
+Admin Section=Seccion de administracion
+Firstname=
+Lastname=
+Email=
+Act/Deact=
+date=
+Check for Addmin=
 
 
 

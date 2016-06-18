@@ -4,11 +4,28 @@
 
  error_reporting(E_ALL ^ E_NOTICE);
 require("connection.php");
+require_once('class.translation.php');
 
 session_start();
+
+//translate
+
+$sp = $_GET['sp'];
+
+if(isset($sp)){
+	$translate = new Translator($sp);
+}
+else{
+	$translate = new Translator('en');
+}
+
+
+
+
 $emailss = $_SESSION['email'];
 
 $pagee = $_GET['v'];
+
 
 $p = $pagee;
 
@@ -17,7 +34,13 @@ $x = ($p * 25)-25;
 $query = mysqli_query($con, "select * from groupp order by id DESC limit  $x, 25");
 
 
-echo "<div  ><table id='groupd' id=''  style='background-color:;'  ><tr ><td><center><div style='width:80px;  '><b>Age</b></div></center></td><td ><center><div style='width:140px; '><b>Stage of change</b></div></center></td><td><center><div style='width:140px; overflow-x: hidden;'><b>Symptoms and Disorders</b></div></center></td><td><center><div style='width:200px; overflow-x: hidden; '><b>Psychological Treatment</b></div></center></td><td><center><div style='width:120px; overflow-x: hidden; '><b>Evidence Level</b></div></center></td><td><center><div style='width:500px; overflow-x: hidden; '><b>Basis for Evidence</b></div></center></td><td></td><td></td></tr></table><div>";
+
+
+echo "<div  ><table id='groupd' id=''  style='background-color:;'  ><tr ><td><center><div style='width:80px;  '><b>
+".
+$translate->__("Age")
+."
+</b></div></center></td><td ><center><div style='width:140px; '><b>Stage of change</b></div></center></td><td><center><div style='width:140px; overflow-x: hidden;'><b>Symptoms and Disorders</b></div></center></td><td><center><div style='width:200px; overflow-x: hidden; '><b>Psychological Treatment</b></div></center></td><td><center><div style='width:120px; overflow-x: hidden; '><b>Evidence Level</b></div></center></td><td><center><div style='width:500px; overflow-x: hidden; '><b>Basis for Evidence</b></div></center></td><td></td><td></td></tr></table><div>";
 
 
 while($row=mysqli_fetch_array($query)){

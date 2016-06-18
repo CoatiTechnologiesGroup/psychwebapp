@@ -3,13 +3,28 @@
 <?php 
 include("connection.php");
 
+
+
+
+
+
 function clientAll($con){
+	
+	//translate
+require_once('class.translation.php');
+
+if(isset($llk)){
+	$translate = new Translator($llk);
+}
+else{
+	$translate = new Translator('en');
+}
 $query = mysqli_query($con,"SELECT * FROM client order by date DESC");
 
 
 //$query = mysqli_query($con,"SELECT * FROM client JOIN admin_pass ON client.email = admin_pass.email   ORDER BY client.id DESC");
 
-echo"<table id='clientalh' >" . " <tr><td>id</td> <td>Firstname</td><td>Lastname</td><td title='$email'>Email</td><td title='$date'>date </td><td><span >Act/Deact</span></td> <td><span >Check for Addmin</span></td></tr>"."</table>";
+echo"<table id='clientalh' >" . " <tr><td>id</td> <td>" . $translate->__('Firstname'). "Firstname</td><td>Lastname</td><td title='$email'>Email</td><td title='$date'>date </td><td><span >Act/Deact</span></td> <td><span >Check for Addmin</span></td></tr>"."</table>";
 echo "<table id='cliental' >";
 while(($row=mysqli_fetch_array($query))){
 	

@@ -31,7 +31,8 @@ echo $fu;
 
 </div>
 
-<?Php include "../functions/footer.php";?><script type="text/javascript">
+<?Php include "../functions/footer.php";?>
+<script type="text/javascript">
 
 //for check new password
  document.getElementById('new').disabled=true;
