@@ -40,11 +40,11 @@ if ($num >0){}else {header("location: ../index.php");}
 
 <div id="heade">
 <span id="logout" ><a  style="color:orange; font-size:20px;
-text-decoration:none; margin-left:2px;" href="../functions/logout.php" > <?php $translate->__('Logout'); ?></a></span>
-<span id="insertm"  style=" cursor:pointer; font-size:20px; color:green;  border-left:thin solid green; border-right:thin solid green; padding:2px;"> <?php $translate->__('Insert manually'); ?></span> 
- <span id="uploadee" style=" cursor:pointer; font-size:20px; color:green;  "><?php $translate->__('Upload'); ?></span>
- <span id="searched" style="cursor:pointer; font-size:20px; color:green; border-left:thin solid green;  padding:2px;"> <?php $translate->__('Search'); ?> </span>
- <span id="cliente" ><a  href="admin.php" style=" text-decoration:none; color:orange; border-left:thin solid green; padding:2px;"><?php $translate->__('Client/Admin'); ?> </a> </span>
+text-decoration:none; margin-left:2px;" href="../functions/logout.php" > <?php echo $translate->__('Logout'); ?></a></span>
+<span id="insertm"  style=" cursor:pointer; font-size:20px; color:green;  border-left:thin solid green; border-right:thin solid green; padding:2px;"> <?php echo $translate->__('Insert manually'); ?></span> 
+ <span id="uploadee" style=" cursor:pointer; font-size:20px; color:green;  "><?php echo $translate->__('Upload'); ?></span>
+ <span id="searched" style="cursor:pointer; font-size:20px; color:green; border-left:thin solid green;  padding:2px;"> <?php echo $translate->__('Search'); ?> </span>
+ <span id="cliente" ><a  href="admin.php" style=" text-decoration:none; color:orange; border-left:thin solid green; padding:2px;"><?php echo $translate->__('Client/Admin'); ?> </a> </span>
 <span id="logout"><a  href="../functions/logout.php"  title="logout"></a></span>
 </div>
 
@@ -56,8 +56,8 @@ text-decoration:none; margin-left:2px;" href="../functions/logout.php" > <?php $
 <span id="success"></span><br/>
 
 <fsorm method="post"  enctype="multipart/form-data">
-<input type="file"  title="Choose an excel file" name="excel" id="excel"    /><input name='sumb' id="excelb" type="button"   onclick="uploadfile();"value="<?php $translate->__('Insert'); ?>"/><span><i id="hss" style="color:black; cursor:pointer; font-size:30px;"
- onclick="closedd('h.php');"> ? </i></span> <span  id="successs"><?php $translate->__('loading...'); ?><img   width="15px"  height="15px"src="../pictures/loading.gif"></span>
+<input type="file"  title="Choose an excel file" name="excel" id="excel"    /><input name='sumb' id="excelb" type="button"   onclick="uploadfile();"value="<?php echo $translate->__('Insert'); ?>"/><span><i id="hss" style="color:black; cursor:pointer; font-size:30px;"
+ onclick="closedd('h.php');"> ? </i></span> <span  id="successs"><?php echo $translate->__('loading...'); ?><img   width="15px"  height="15px"src="../pictures/loading.gif"></span>
 
 
 </form></div>
@@ -65,7 +65,7 @@ text-decoration:none; margin-left:2px;" href="../functions/logout.php" > <?php $
 <div id="searchee">
 <fodrm name="search" id="serach">
 <select name="sel" id="sel" onchange="displaye();"  >
-<option style=" display:none;"><?php $translate->__('Age'); ?></option>
+<option style=" display:none;"><?php echo $translate->__('Age'); ?></option>
 
 
 <?php 
@@ -76,21 +76,21 @@ dropshow($con,"Age");
 </select>
 <select  name="sel2" id="sel2" onchange="displaye();">
 
-<option style="display:none;"><?php $translate->__('Stage of Change'); ?></option>
+<option style="display:none;"><?php echo $translate->__('Stage of Change'); ?></option>
 <?php 
 dropshow($con,"Stage_of_Change");
 
 ?>
 </select>
 <select name="sel3" id="sel3" onchange="displaye();">
-<option style="display:none;"><?php $translate->__('Symptoms and Disorders'); ?></option>
+<option style="display:none;"><?php echo $translate->__('Symptoms and Disorders'); ?></option>
 <?php 
 dropshow($con,"Symptoms_and_Disorders");
 
 ?>
 
 </select>
-<input style="font-size:20px;" id="done_search_s" type="button" onclick="searchhe();"  value="<?php $translate->__('Search'); ?>"/>
+<input style="font-size:20px;" id="done_search_s" type="button" onclick="searchhe();"  value="<?php echo $translate->__('Search'); ?>"/>
 <span id="hssi"  style=" font-size:24px; cursor:pointer;" title="insert to database below">?</span></fordm>
 
 </div>
@@ -101,30 +101,30 @@ dropshow($con,"Symptoms_and_Disorders");
 
 <br/>
 <div>
-<center><?php $translate->__('Age'); ?></center>
+<center><?php echo $translate->__('Age'); ?></center>
 
-<input  type="text" id="Age"  placeholder="<?php $translate->__('Age'); ?>" onKeyUp="searche('Age','#Age');"><br/>
+<input  type="text" id="Age"  placeholder="<?php echo $translate->__('Age'); ?>" onKeyUp="searche('Age','#Age');"><br/>
 
 <div   id="Ages" style="background-color:green; border-radius:0 0 5px 5px; color:white;  z-index:27; overflow:scroll; width:; min-height:0px; max-height:400px;"></div>
 
 </div>
 
-<div id=""><center><?php $translate->__('Stage of Change'); ?>
+<div id=""><center><?php echo $translate->__('Stage of Change'); ?>
 </center>
-<input onKeyUp="searche('Stage_of_Change','#Stage_of_Change');" type="text" id="Stage_of_Change"  placeholder="<?php $translate->__('Stage of Change'); ?>">
+<input onKeyUp="searche('Stage_of_Change','#Stage_of_Change');" type="text" id="Stage_of_Change"  placeholder="<?php echo $translate->__('Stage of Change'); ?>">
 <div   id="Stage_of_Changes" style="background-color:green; border-radius:0 0 5px 5px; color:white; cursor:; z-index:27; overflow:scroll; width:; min-height:0px; max-height:400px;"></div>
 </div>
 
 
-<div id="" ><center><?php $translate->__('Symptoms and Disorders'); ?></center>
-<input onKeyUp="searche('Symptoms_and_Disorders','#Symptoms_and_Disorders');" type="text" id="Symptoms_and_Disorders"  placeholder="<?php $translate->__('Symptoms and Disorders'); ?>">
+<div id="" ><center><?php echo $translate->__('Symptoms and Disorders'); ?></center>
+<input onKeyUp="searche('Symptoms_and_Disorders','#Symptoms_and_Disorders');" type="text" id="Symptoms_and_Disorders"  placeholder="<?php echo $translate->__('Symptoms and Disorders'); ?>">
 <div   id="Symptoms_and_Disorderss" style="background-color:green; border-radius:0 0 5px 5px; color:white; cursor:; z-index:27; overflow:scroll; width:; min-height:0px; max-height:400px;"></div>
 </div>
 
 
 
-<div id=""><center><?php $translate->__('Psychological Treatment'); ?></center>
-<input onKeyUp="searche('Psychological_Treatment','#Psychological_Treatment');" type="text" id="Psychological_Treatment"  placeholder="<?php $translate->__('Psychological Treatment'); ?>">
+<div id=""><center><?php echo $translate->__('Psychological Treatment'); ?></center>
+<input onKeyUp="searche('Psychological_Treatment','#Psychological_Treatment');" type="text" id="Psychological_Treatment"  placeholder="<?php echo $translate->__('Psychological Treatment'); ?>">
 
 <div   id="Psychological_Treatments" style="background-color:green; border-radius:0 0 5px 5px; color:white; cursor:; z-index:27; overflow:scroll; width:px; min-height:0px; max-height:400px;"></div>
 </div>
@@ -133,15 +133,15 @@ dropshow($con,"Symptoms_and_Disorders");
 
 
 
-<div id=""><center><?php $translate->__('Evidence Level'); ?></center>
-<input onKeyUp="searche('Evidence_Level','#Evidence_Level');"  type="text" id="Evidence_Level" placeholder="<?php $translate->__('Evidence Level'); ?>" >
+<div id=""><center><?php echo $translate->__('Evidence Level'); ?></center>
+<input onKeyUp="searche('Evidence_Level','#Evidence_Level');"  type="text" id="Evidence_Level" placeholder="<?php echo $translate->__('Evidence Level'); ?>" >
 <div   id="Evidence_Levels" style="background-color:green; border-radius:0 0 5px 5px; color:white; cursor:; z-index:27; overflow:scroll; width:; min-height:0px; max-height:400px;"></div>
 </div>
 
-<div id=""><center><?php $translate->__('Basis for Evidence'); ?></center>
-<textarea onKeyUp="searche('Basis_for_Evidence','#Basis_for_Evidence');" style="height:60px;" type="text" id="Basis_for_Evidence" placeholder="<?php $translate->__('Basis for Evidence'); ?>" ></textarea>
+<div id=""><center><?php echo $translate->__('Basis for Evidence'); ?></center>
+<textarea onKeyUp="searche('Basis_for_Evidence','#Basis_for_Evidence');" style="height:60px;" type="text" id="Basis_for_Evidence" placeholder="<?php echo $translate->__('Basis for Evidence'); ?>" ></textarea>
 
-<span  id ="hii" style="float:right; font-size:24px; cursor:pointer; " title="insert to database below">?</span><span id="adde" onClick="adde();" style="cursor:pointer; font-size:18px;  z-index:100px;color:white; background-color:green; border-radius:4px;  padding:1px; float:right; " ><?php $translate->__('Insert'); ?></span><br/>
+<span  id ="hii" style="float:right; font-size:24px; cursor:pointer; " title="insert to database below">?</span><span id="adde" onClick="adde();" style="cursor:pointer; font-size:18px;  z-index:100px;color:white; background-color:green; border-radius:4px;  padding:1px; float:right; " ><?php echo $translate->__('Insert'); ?></span><br/>
 <span id="s" style="font-size:15px; float:right; ";><span style="color:white;"></span></span>
 </div>
 
@@ -180,8 +180,8 @@ dropshow($con,"Symptoms_and_Disorders");
 
 </span>
 <span id='left_p'>
-<span id="x"><?php $translate->__('hide'); ?></span>
-<span id="xs"><?php $translate->__('Page No.'); ?></span>
+<span id="x"><?php echo $translate->__('hide'); ?></span>
+<span id="xs"><?php echo $translate->__('Page No.'); ?></span>
 <span id="page2">
 
 
@@ -237,7 +237,7 @@ function hxx(g){
 	
 	}
 
-$("#ii").html(" "+"<span style='color:red;'><?php $translate->__('Page'); ?> "+1+"</span>");
+$("#ii").html(" "+"<span style='color:red;'><?php echo $translate->__('Page'); ?> "+1+"</span>");
 
 function adde(){
 		var age = $('#Age').val();
@@ -270,7 +270,7 @@ function adde(){
 		  $('#evidences').hide();
 		 $('#basiss').hide();
 		 
-		 $("#ii").html(" "+"<span style='color:red;'><?php $translate->__('Page'); ?> "+1+"</span>");
+		 $("#ii").html(" "+"<span style='color:red;'><?php echo $translate->__('Page'); ?> "+1+"</span>");
 		 $("#adminsrp").show();
 		
 		  

@@ -55,7 +55,11 @@ Input current password in order to delete account=contrasena actual de entrada c
 New Password can't be empty=Nueva contrasena no puede estar vacia
 Update was succeful including your new password=Actualizacion se ha realizado succeful incluyendo su nueva contrasena
 Page=pagina
-Admin Section=
+Admin Section=Seccion de administracion
+count=contar
+Count=contar
+question=pregunta
+Question=pregunta
 Updates=actualizaciones
 Add admins=Anadir los administradores
 clients=cliente
@@ -64,13 +68,19 @@ Feedback Answers=Las respuestas de retroalimentacion
 
 Welcome=Bienvenido
 Admin Section=Seccion de administracion
-Firstname=
-Lastname=
-Email=
-Act/Deact=
-date=
-Check for Addmin=
+Firstname=nombre de pila
+Lastname=apellido
+Email=Email
+Act/Deact=Act / Desact
+date=fecha
+Check for Addmin=Compruebe si hay Addmin
 Insert=insertar
+Search through for names=Realice una busqueda entre los nombres
+delete=borrar
+show=espectaculo
+add=anadir
+Add=anadir
+User= usuario
 
 
 
