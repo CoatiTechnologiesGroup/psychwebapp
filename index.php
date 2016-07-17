@@ -45,10 +45,13 @@ if($emailss){
 
 
 <body id="s" >
-<center><?php  echo $translate->__('Choose language'); ?> :   <a  title="spanish" href="index.php?lang=de"><?php echo $translate->__('Spanish'); ?></a>::<a  title="english" href="index.php">english</a>
+<div id="lann">
+<center><span id="show_lan" style="cursor:pointer;"><?php  echo $translate->__('Choose language'); ?></span><br/>   <div id="ll"><a  title="spanish" href="index.php?lang=de"><?php echo $translate->__('Spanish'); ?></a><br/><a  title="english" href="index.php">english</a></div>
 
-   
+   <p></p>
 </center>
+
+</div>
 <div id="top"></div>
 
 

@@ -377,7 +377,7 @@ if(v==v){
 	$("#s").hide();
 	
 	
-	$.get('../functions/pagination.php', {v:v},function(data){
+	$.get('../functions/pagination.php?sp=de', {v:v},function(data){
 	$("#adminsrp").html( data);
 $('#search_resulte').hide();
 $("#ii").html("<span style='color:red;'> Page"+ v+"</span> ");
@@ -406,7 +406,7 @@ if(v==v){
 	$("#s").hide();
 	
 	
-	$.get('../functions/pagination.php', {v:v},function(data){
+	$.get('../functions/pagination.php?lang=de', {v:v},function(data){
 	$("#adminsrp").html( data);
 $('#search_resulte').hide();
 

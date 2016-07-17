@@ -81,7 +81,9 @@ show=espectaculo
 add=anadir
 Add=anadir
 User= usuario
-
-
-
-
+Search through the database below. You can also edit and delete a row or column=
+insert into database below=
+This upload engine accepts only excel files with the extension xlsx. When uploading make sure you have 7 columns on your excel sheet, ie. age, stage of change , symptoms and disorders, psychological treatment, evidence level and basis for evidence. You don't have to give titles such as age for the first column or symptoms and disorders for the third column.Note! these steps are done on your excel sheet. when done you upload it here. :)=Este motor de subida solo acepta archivos de Excel con la extension .xlsx . Al subir asegurese de que tiene 7 columnas en la hoja de Excel , es decir . la edad, la etapa de cambio , sintomas y trastornos, tratamiento psicologico , nivel de evidencia y la base de pruebas . Usted no tiene que dar titulos como la edad de la primera columna o sintomas y trastornos de la tercera column.Note ! estos pasos se realizan en la hoja de calculo de Excel. cuando haya terminado de cargar aqui. :)
+close=cerca
+Search through the database below. You can also edit and delete a row or column=Buscar a traves de la base de datos a continuacion. Tambien puede editar y eliminar una fila o columna
+insert into database below=insertar en la base de datos a continuacion

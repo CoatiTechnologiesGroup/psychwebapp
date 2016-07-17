@@ -3,10 +3,10 @@
 <?php
 
 
-
+include"../functions/section.php";
  error_reporting(E_ALL ^ E_NOTICE);
 require("connection.php");
-require_once('class.translation.php');
+require('class.translation.php');
 
 session_start();
 

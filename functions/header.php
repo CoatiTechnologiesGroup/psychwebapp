@@ -52,7 +52,7 @@ if($num>0){
 <span id="logout"><a  href="../functions/logout.php" title="Log Out" ></a></span> 
 
 <span id="setting" > 
-<a style=" margin-left:3px; color:orange;" href="./main.php" title="Main page"><?php $translate->__('Main') ?> </a></span>
+<a style=" margin-left:3px; color:orange;" href="./main.php" title="Main page"><?php echo $translate->__('Main') ?> </a></span>
 <span id= "welcome"><a style=" font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif;color:white; text-decoration:none; background-color: ;" href="./profilec.php" title="Your profile edit">
 
 <?php

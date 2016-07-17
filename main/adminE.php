@@ -199,23 +199,22 @@ dropshow($con,"Symptoms_and_Disorders");
 
 <?Php include "../functions/footer.php";?>
 
-<div id="hi" style=" border:thin solid rgba(0,0,0,1.00);  position: fixed; top:150px; right:540px; background-color:white;">
-insert into database below <br/>
-<div style=" cursor:pointer;border:thin solid red; " hi="hx" onClick="hxx('hi');" ><center>close</center></div>
+<div id="hi" style=" border:thin solid rgba(0,0,0,1.00);  position: fixed; top:150px; right:540px; background-color:white;"><?php echo $translate->__("insert into database below")?>
+
+ <br/>
+<div style=" cursor:pointer;border:thin solid red; " hi="hx" onClick="hxx('hi');" ><center><?php echo $translate->__("close")?></center></div>
 </div>
 
 
 </div>
-<div id="hs" style=" border:thin solid rgba(0,0,0,1.00);  position: fixed; top:150px; right:540px; width:500px; background-color:white;">
-This upload engine accepts only excel files with the extension xlsx. 
-When uploading make sure you have 7 columns on your excel sheet, ie. age, stage of change , symptoms and disorders, psychological treatment, evidence level and basis for evidence.
-You don't have to give titles such as age for the first column or symptoms and disorders for the third column.Note! these steps are done on your excel sheet. when done you upload it here. :)
-<div style=" cursor:pointer;border:thin solid red; " hi="" onClick="hxx('hs');" title="close" ><center>close</center></div>
+<div id="hs" style=" border:thin solid rgba(0,0,0,1.00);  position: fixed; top:150px; right:540px; width:500px; background-color:white;"><?php echo $translate->__("This upload engine accepts only excel files with the extension xlsx. When uploading make sure you have 7 columns on your excel sheet, ie. age, stage of change , symptoms and disorders, psychological treatment, evidence level and basis for evidence. You don't have to give titles such as age for the first column or symptoms and disorders for the third column.Note! these steps are done on your excel sheet. when done you upload it here. :)"); ?>
+
+<div style=" cursor:pointer;border:thin solid red; " hi="" onClick="hxx('hs');" title="close" ><center><?php echo $translate->__("close") ?></center></div>
 </div>
 
-<div id="hsss" style=" border:thin solid rgba(0,0,0,1.00);  position: fixed; top:150px; right:540px; background-color:white;">
-Search through the database below. You can also edit and delete a row or column <br/>
-<div style=" cursor:pointer;border:thin solid red; " hi="hx" onClick="hxx('hsss');" ><center>close</center></div>
+<div id="hsss" style=" border:thin solid rgba(0,0,0,1.00);  position: fixed; top:150px; right:540px; background-color:white;"><?php echo $translate->__("Search through the database below. You can also edit and delete a row or column")?>
+ <br/>
+<div style=" cursor:pointer;border:thin solid red; " hi="hx" onClick="hxx('hsss');" ><center><?php echo $translate->__("close")?></center></div>
 <script type="text/javascript">
 /*function closedd (target){
 	var window_dimensions = "toolbars=no,menubar=no,location=no,scrollbars=yes,resizable=yes,status=yes"
